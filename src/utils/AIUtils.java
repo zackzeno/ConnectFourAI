@@ -211,4 +211,18 @@ public class AIUtils {
 		}
 		return f;
 	}
+	
+	//fuck off for not putting this in utils...
+	public static Object[] arrayConcatenate(Object[] input, Object[] a1, Object[] a2) {
+		int i = 0;
+		for(int j = 0; j < a1.length; j++) {
+			input[i] = a1[j];
+			i++;
+		}
+		for(int j = 0; j < a2.length; j++) {
+			input[i] = a2[j];
+			i++;
+		}
+		return input;
+	}
 }
