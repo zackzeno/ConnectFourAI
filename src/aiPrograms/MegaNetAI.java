@@ -1,15 +1,15 @@
 package aiPrograms;
 
-import neuralNetComponents.NeuralNet;
-import neuralNetComponents.NeuralNetEdge;
-import neuralNetComponents.NeuralNetNode;
-import neuralNetComponents.meganet.*;
-import utils.AIUtils;
-import utils.BoardPos;
-import utils.BoardSize;
 import gameComponents.AIProgram;
 import gameComponents.Board;
 import gameComponents.MoveInfo;
+import neuralNetComponents.NeuralNet;
+import neuralNetComponents.NeuralNetEdge;
+import neuralNetComponents.NeuralNetNode;
+import neuralNetComponents.meganet.OutputNode;
+import neuralNetComponents.meganet.PositionInputGroup;
+import utils.BoardPos;
+import utils.BoardSize;
 
 public class MegaNetAI implements AIProgram {
 
@@ -35,6 +35,7 @@ public class MegaNetAI implements AIProgram {
 	
 	@Override
 	public MoveInfo makeMove(int playerNum, Board board) {
+		return null;
 		
 	}
 	
@@ -77,10 +78,24 @@ public class MegaNetAI implements AIProgram {
 	}
 	
 	public BoardPos getNeuralNetMove(Board currentBoard, int playerNum) {
+		return null;
 		
 	}
 	
 	public int getNeuralNetInput(int colIndex, int rowIndex, Board currentBoard, int playerNum) {
+		return playerNum;
+		
+	}
+
+	@Override
+	public void startGame(int playerNum) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void endGame(int playerNum) {
+		// TODO Auto-generated method stub
 		
 	}
 

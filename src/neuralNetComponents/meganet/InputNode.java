@@ -18,5 +18,11 @@ public class InputNode extends NeuralNetNode {
 	public void unfire() {
 		setValue(0);
 	}
+
+	@Override
+	public String getNodeInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

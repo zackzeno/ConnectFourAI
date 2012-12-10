@@ -28,4 +28,11 @@ public class PointNode extends NeuralNetNode {
 		//do nothing, this node should not learn
 	}
 
+
+	@Override
+	public String getNodeInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

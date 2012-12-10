@@ -35,4 +35,10 @@ public class FourTupleNode extends NeuralNetNode {
 		//do nothing, this node doesnt learn
 	}
 
+	@Override
+	public String getNodeInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -10,4 +10,10 @@ public class StandardNode extends NeuralNetNode {
 		return 0;
 	}
 
+	@Override
+	public String getNodeInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

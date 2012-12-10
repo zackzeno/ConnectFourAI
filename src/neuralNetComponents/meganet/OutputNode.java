@@ -9,4 +9,10 @@ public class OutputNode extends NeuralNetNode {
 		return getValue();
 	}
 
+	@Override
+	public String getNodeInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

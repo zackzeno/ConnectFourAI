@@ -17,4 +17,10 @@ public class LineNode extends NeuralNetNode {
 		return getValue() / positions.length;
 	}
 
+	@Override
+	public String getNodeInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
