@@ -3,20 +3,20 @@ package neuralNetComponents.meganet;
 import neuralNetComponents.NeuralNetNode;
 
 public class InputNode extends NeuralNetNode {
-	
-	
+
 	@Override
-	public double getFiringValue() {
-		// TODO Auto-generated method stub
-		return getValue();
+	public String getNodeInfo() {
+		return "Input Node";
 	}
 
-	public void fire() {
-		setValue(1);
+	@Override
+	public double getActivationValue(double value) {
+		return value;
 	}
-	
-	public void unfire() {
-		setValue(0);
+
+	@Override
+	public double getActivationDerivative(double value) {
+		return 1;
 	}
 	
 }

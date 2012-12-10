@@ -98,4 +98,8 @@ public abstract class NeuralNetNode implements Serializable {
 	public ArrayList<NeuralNetEdge> getOutEdges() {
 		return forwardEdges;
 	}
+	
+	public ArrayList<NeuralNetEdge> getInEdges() {
+		return backwardEdges;
+	}
 }

@@ -1,14 +1,50 @@
 package neuralNetComponents.meganet;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+
+import neuralNetComponents.NeuralNetEdge;
 import neuralNetComponents.NeuralNetNode;
 
-public class NeuralNetLayer {
+
+
+public class NeuralNetLayer implements Serializable{
 	
-	int layerIndex;
-	ArrayList<NeuralNetNode> nodes;
+	private static final long serialVersionUID = -6227011591188981200L;
+	private ArrayList<SoftmaxNode> nodes;
 	
 	public NeuralNetLayer() {
-		nodes = new ArrayList<>
+		nodes = new ArrayList<SoftmaxNode>();
 	}
+	
+	public void addNode(SoftmaxNode node) {
+		nodes.add(node);
+	}
+	
+	public void addEdgeToAll(NeuralNetNode from) {
+		for(NeuralNetNode to : nodes) {
+			NeuralNetEdge e = new NeuralNetEdge(from, to, 0);
+			from.addForwardEdge(e);
+			to.addBackwardEdge(e);
+		}
+	}
+	
+	public double getSoftmaxValue(double value) {
+		double num = 0;
+		double den = 0;
+		
+		num = Math.exp(value);
+		
+		for(SoftmaxNode n : nodes) {
+			den += Math.exp(n.getValue());
+		}
+		
+		return num / den;
+	}
+	
+	public NeuralNetNode[] getNodeArray() {
+		return nodes.toArray(new NeuralNetNode[nodes.size()]);
+	}
+	
 	
 }
