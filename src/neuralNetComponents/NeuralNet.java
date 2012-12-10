@@ -42,8 +42,13 @@ public class NeuralNet implements Serializable {
 	}
 	
 	public void backPropagate(double[] outputModifiers) {
-		for(int i = 0; i < netNodes[nLayers-1].length; i++) {
-			netNodes[nLayers-1][i].backPropagate(outputModifiers[i]);
+		for(int i = 0; i < netNodes[nLayers - 1].length; i++) {
+			netNodes[nLayers - 1][i].setDelta(outputModifiers[i]);
+		}
+		for(int i = nLayers - 1; i >= 0; i++) {
+			for(int j = 0; j < netNodes[i].length; j++) {
+				netNodes[i][j].backPropagate();
+			}
 		}
 	}
 	

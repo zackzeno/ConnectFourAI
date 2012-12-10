@@ -27,7 +27,7 @@ public class NeuralNetEdge implements Serializable {
 		return weight;
 	}
 	
-	public void modifyWeight(double modifier) {
-		weight = weight*modifier;
+	public void modifyWeight(double increment) {
+		weight = weight += increment;
 	}
 }
