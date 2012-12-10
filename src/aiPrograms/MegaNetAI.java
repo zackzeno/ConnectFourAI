@@ -54,11 +54,17 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 		
 		double[] outputs = net.forwardPropagate(getInputsFromBoard(board, playerNum));
 		
-		int bestMove = 0;
-		for(int i = 1; i < outputs.length; i++) {
-			if(outputs[i] > outputs[bestMove]) {
+		int bestMove = -1;
+		double bestScore = -1;
+		for(int i = 0; i < outputs.length; i++) {
+			if(outputs[i] > bestScore) {
 				bestMove = i;
+				bestScore = outputs[i];
 			}
+		}
+		
+		if(bestMove == -1) {
+			bestMove = (int) (Math.random() * outputs.length);
 		}
 		
 		return board.makeMove(bestMove, playerNum);
