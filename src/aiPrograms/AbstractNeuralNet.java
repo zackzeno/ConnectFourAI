@@ -27,7 +27,7 @@ public abstract class AbstractNeuralNet implements AIProgram {
 		saveFileName = saveFile;
 		initiated = false;
 		if(logging) {
-			File logFile = AIUtils.getOrCreateLogfile("FourLayerNet");
+			File logFile = AIUtils.getOrCreateLogfile(this.getClass().getName());
 			try {
 				logOut = new FileWriter(logFile);
 			} catch (IOException e) {

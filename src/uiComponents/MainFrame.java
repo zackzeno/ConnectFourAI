@@ -32,7 +32,7 @@ public class MainFrame extends JFrame {
 		instance.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		instance.setVisible(true);
 		Game firstGame = new Game(new Board(6, 6, 4), 
-				new Player[] { new Player(null, 1), new Player(new RandomMoveAI(), 2) }, 1, 3, 5);
+				new Player[] { new Player(null, 1), new Player(new RandomMoveAI(), 2) }, 1, 3, 5, null);
 		openPanel = new GamePanel(firstGame);
 		instance.add(openPanel);
 		firstGame.getBoard().setGame(firstGame);

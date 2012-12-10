@@ -1,11 +1,15 @@
 package gameComponents;
 
+import java.util.ArrayList;
+
+import aiPrograms.interfaces.Teachable;
 import enums.MoveResult;
 import uiComponents.GamePanel;
 import uiComponents.MainFrame;
 
 public class Game implements Runnable {
 	private Player[] players;
+	private Teachable observer;
 	private Board board;
 	private int nRounds;
 	private double aiMoveDelay;
@@ -18,8 +22,9 @@ public class Game implements Runnable {
 	
 	private static Thread activeGameThread = null;
 	
-	public Game(Board b, Player[] p, int n, double am, double ag) {
+	public Game(Board b, Player[] p, int n, double am, double ag, Teachable o) {
 		players = p;
+		observer = o;
 		board = b;
 		nRounds = n;
 		aiMoveDelay = am;
@@ -81,10 +86,14 @@ public class Game implements Runnable {
 		players[0].startGame();
 		players[1].startGame();
 		for(int n = 1; n <= nRounds; n++) {
+			ArrayList<MoveInfo> moveList = null;
+			if(observer != null) {
+				moveList = new ArrayList<MoveInfo>();
+			}
 			players[0].startRound();
 			players[1].startRound();
 			((GamePanel)MainFrame.getMainPanel()).getOptionsPanel().setGameScoreLabel("P1: " + p1Wins + " wins, P2: " 
-					+ p2Wins + " wins, round " + n + " of " + nRounds);
+					+ p2Wins + " wins, R: " + n + "/" + nRounds);
 			switch(winningPlayer) {
 				case 0:
 					((GamePanel)MainFrame.getMainPanel()).getOptionsPanel().setLastRoundLabel("Last round tied.");
@@ -132,6 +141,9 @@ public class Game implements Runnable {
 				if(result == null) {
 					return;
 				}
+				if(observer != null) {
+					moveList.add(result);
+				}
 				p1Turn = !p1Turn;
 				((GamePanel)MainFrame.getMainPanel()).getOptionsPanel().setLastMoveLabel(result.getMoveText());
 				if(result.getResult() == MoveResult.WIN || result.getResult() == MoveResult.FULL_BOARD) {
@@ -157,6 +169,9 @@ public class Game implements Runnable {
 			players[0].endRound(winningPlayer);
 			players[1].endRound(winningPlayer);
 			nRoundsPlayed++;
+			if(observer != null) {
+				observer.teachNeuralNet(moveList.toArray(new MoveInfo[0]), winningPlayer);
+			}
 			switch(winningPlayer) {
 				case 1:
 					p1Wins++;
@@ -189,7 +204,7 @@ public class Game implements Runnable {
 			}
 		}
 		((GamePanel)MainFrame.getMainPanel()).getOptionsPanel().setGameScoreLabel("P1: " + p1Wins + " wins, P2: " 
-				+ p2Wins + " wins, all " + nRounds + " round(s) complete");
+				+ p2Wins + " wins, complete (" + nRounds + ")");
 		switch(winningPlayer) {
 			case 0:
 				((GamePanel)MainFrame.getMainPanel()).getOptionsPanel().setLastRoundLabel("Last round tied.");

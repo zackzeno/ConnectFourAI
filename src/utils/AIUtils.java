@@ -198,16 +198,20 @@ public class AIUtils {
 	
 	public static File getOrCreateLogfile(String prefix) {
 		Calendar calendar = Calendar.getInstance();
-		File f = new File("logs", prefix + "_y" + calendar.get(Calendar.YEAR) + "_d" + 
+		File f;
+		int vNum = 1;
+		do {
+			f = new File("logs", prefix + "(" + vNum + ")_y" + calendar.get(Calendar.YEAR) + "_d" + 
 				calendar.get(Calendar.DAY_OF_YEAR) + "_h" + calendar.get(Calendar.HOUR_OF_DAY) + "_m" +
 				calendar.get(Calendar.MINUTE) + "_s" + calendar.get(Calendar.SECOND) + ".log");
-		if(!f.exists()) {
-			try {
-				f.createNewFile();
-			} 
-			catch (IOException e) {
-				e.printStackTrace();
-			}
+			vNum++;
+		}
+		while(f.exists());
+		try {
+			f.createNewFile();
+		} 
+		catch (IOException e) {
+			e.printStackTrace();
 		}
 		return f;
 	}
@@ -224,5 +228,14 @@ public class AIUtils {
 			i++;
 		}
 		return input;
+	}
+	
+	public static boolean arrayContains(String[] arr, String check) {
+		for(int i = 0; i < arr.length; i++) {
+			if(arr[i].equals(check)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

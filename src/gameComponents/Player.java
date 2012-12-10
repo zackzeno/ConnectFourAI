@@ -1,6 +1,7 @@
 package gameComponents;
 
 import aiPrograms.FourLayerNeuralNetAI;
+import aiPrograms.MegaNetAI;
 import aiPrograms.MinimaxAI;
 import aiPrograms.MoveValueHeuristicAI;
 import aiPrograms.RandomMoveAI;
@@ -9,7 +10,11 @@ import enums.MoveResult;
 
 public class Player {
 	// TODO add new AI type(s) here
-	public static final String[] playerTypes = {"Human", "Random Mover", "Value Heuristic", "Simple Neural Net", "Four Layer Net", "Minimax"}; 
+	public static final String[] playerTypes = {"Human", "Random Mover", "Value Heuristic", "Simple Neural Net", "Four Layer Net", 
+		"Five Layer Net", "Mega Net", "Minimax"}; 
+	public static final String[] observerTypes = {"None", "Mega Net"};
+	public static final String[] neuralNetTypes = {"Four Layer Net", "Five Layer Net", "Mega Net"};
+	
 	
 	private int playerNum;
 	private boolean isAI;
@@ -45,6 +50,9 @@ public class Player {
 		}
 		else if(aiType.equals("Four Layer Net")) {
 			return new FourLayerNeuralNetAI((String)params[0], (String)params[1], logAI);
+		}
+		else if(aiType.equals("Mega Net")) {
+			return new MegaNetAI((String)params[0], (String)params[1], logAI);
 		}
 		// TODO insert 'else if' for each new ai type here (copy above syntax, send params from call to createAI)
 		else if(aiType.equals("Minimax")) {
