@@ -12,10 +12,15 @@ public class PositionNode extends NeuralNetNode {
 	}
 	
 	@Override
-	public double getFiringValue() {
-		return getValue();
+	public double getActivationValue(double value) {
+		return value;
 	}
 
+	@Override
+	public double getActivationDerivative(double value) {
+		return 1;
+	}
+	
 	@Override
 	public String getNodeInfo() {
 		return "Position Node " + position.toString();

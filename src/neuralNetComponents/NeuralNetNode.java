@@ -8,7 +8,7 @@ public abstract class NeuralNetNode implements Serializable {
 	private static final long serialVersionUID = -2784280108553367549L;
 	private ArrayList<NeuralNetEdge> forwardEdges;
 	private ArrayList<NeuralNetEdge> backwardEdges;
-	private boolean fired;
+	private double accumulatedDelta;
 	private double accumulatedValue;
 	
 	public NeuralNetNode() {
@@ -16,13 +16,9 @@ public abstract class NeuralNetNode implements Serializable {
 		backwardEdges = new ArrayList<NeuralNetEdge>();
 	}
 	
-	public boolean hasFired() {
-		return fired;
-	}
-	
 	public void reset() {
+		accumulatedDelta = 0;
 		accumulatedValue = 0;
-		fired = false;
 	}
 	
 	public void addForwardEdge(NeuralNetEdge edge) {
@@ -41,25 +37,41 @@ public abstract class NeuralNetNode implements Serializable {
 		accumulatedValue = value;
 	}
 	
+	public void setDelta(double value) {
+		accumulatedDelta = value;
+	}
+	
 	public void accumulate(double value) {
 		accumulatedValue += value;
 	}
 	
-	public abstract double getFiringValue();
+	public void backAccumulate(double value) {
+		accumulatedDelta += value;
+	}
+	
+	public abstract double getActivationValue(double value);
+	
+	public abstract double getActivationDerivative(double value);
 	
 	public abstract String getNodeInfo();
 	
 	public void forwardPropagate() {
-		double propagationValue = getFiringValue();
-		if(propagationValue == 0) {
-			return;
-		}
-		fired = true;
+		accumulatedValue = getActivationValue(accumulatedValue);
 		for(int i = 0; i < forwardEdges.size(); i++) {
-			forwardEdges.get(i).getTo().accumulate(propagationValue*forwardEdges.get(i).getWeight());
+			forwardEdges.get(i).getTo().accumulate(accumulatedValue*forwardEdges.get(i).getWeight());
 		}
 	}
 	
+	public void backPropagate() {
+		accumulatedDelta = accumulatedDelta*getActivationDerivative(accumulatedValue);
+		for(int i = 0; i < backwardEdges.size(); i++) {
+			NeuralNetNode bNode = backwardEdges.get(i).getFrom();
+			bNode.backAccumulate(accumulatedDelta*backwardEdges.get(i).getWeight());
+			backwardEdges.get(i).modifyWeight(accumulatedDelta*bNode.accumulatedValue);
+		}
+	}
+	
+	/*
 	public void backPropagate(double reinforcementModifier) {
 		if(reinforcementModifier == 1) {
 			return;
@@ -81,6 +93,7 @@ public abstract class NeuralNetNode implements Serializable {
 			}
 		}
 	}
+	*/
 
 	public ArrayList<NeuralNetEdge> getOutEdges() {
 		return forwardEdges;

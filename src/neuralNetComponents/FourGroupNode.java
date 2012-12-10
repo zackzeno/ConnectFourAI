@@ -12,14 +12,6 @@ public class FourGroupNode extends NeuralNetNode {
 		positions = p;
 	}
 	
-	@Override
-	public double getFiringValue() {
-		if(Math.abs(getValue()) >= 1) {
-			return 1;
-		}
-		return 0;
-	}
-	
 	public BoardPos[] getPositions() {
 		return positions;
 	}
@@ -50,6 +42,19 @@ public class FourGroupNode extends NeuralNetNode {
 			ret = ret + positions[i].toString() + " ";
 		}
 		return ret;
+	}
+	
+	@Override
+	public double getActivationValue(double value) {
+		if(Math.abs(value) >= 1) {
+			return 1;
+		}
+		return 0;
+	}
+
+	@Override
+	public double getActivationDerivative(double value) {
+		return 1;
 	}
 
 }
