@@ -1,5 +1,8 @@
 package neuralNetComponents;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -10,6 +13,9 @@ public abstract class NeuralNetNode implements Serializable {
 	private ArrayList<NeuralNetEdge> backwardEdges;
 	private double accumulatedDelta;
 	private double accumulatedValue;
+	private double activationValue;
+	
+	private static final double learningRate = .7;
 	
 	public NeuralNetNode() {
 		forwardEdges = new ArrayList<NeuralNetEdge>();
@@ -29,12 +35,20 @@ public abstract class NeuralNetNode implements Serializable {
 		backwardEdges.add(edge);
 	}
 	
-	public double getValue() {
+	public double getInputValue() {
 		return accumulatedValue;
 	}
 	
-	public void setValue(double value) {
+	public void setInputValue(double value) {
 		accumulatedValue = value;
+	}
+	
+	public double getActivationValue() {
+		return activationValue;
+	}
+	
+	public void setActivationValue(double value) {
+		activationValue = value;
 	}
 	
 	public void setDelta(double value) {
@@ -56,7 +70,7 @@ public abstract class NeuralNetNode implements Serializable {
 	public abstract String getNodeInfo();
 	
 	public void forwardPropagate() {
-		accumulatedValue = getActivationValue(accumulatedValue);
+		activationValue = getActivationValue(accumulatedValue);
 		for(int i = 0; i < forwardEdges.size(); i++) {
 			forwardEdges.get(i).getTo().accumulate(accumulatedValue*forwardEdges.get(i).getWeight());
 		}
@@ -67,7 +81,7 @@ public abstract class NeuralNetNode implements Serializable {
 		for(int i = 0; i < backwardEdges.size(); i++) {
 			NeuralNetNode bNode = backwardEdges.get(i).getFrom();
 			bNode.backAccumulate(accumulatedDelta*backwardEdges.get(i).getWeight());
-			backwardEdges.get(i).modifyWeight(accumulatedDelta*bNode.accumulatedValue);
+			backwardEdges.get(i).modifyWeight(learningRate*accumulatedDelta*bNode.accumulatedValue);
 		}
 	}
 	
@@ -101,5 +115,26 @@ public abstract class NeuralNetNode implements Serializable {
 	
 	public ArrayList<NeuralNetEdge> getInEdges() {
 		return backwardEdges;
+	}
+	
+	private void writeObject(ObjectOutputStream s) throws IOException {
+		s.writeInt(forwardEdges.size());
+		for(NeuralNetEdge e : forwardEdges) {
+			s.writeObject(e);
+		}
+	}
+	
+	private void readObject(ObjectInputStream s) throws IOException, ClassNotFoundException {		
+		forwardEdges = new ArrayList<NeuralNetEdge>();
+		backwardEdges = new ArrayList<NeuralNetEdge>();
+		
+		int numForward = s.readInt();
+		for(int i = 0; i < numForward; i++) {
+			forwardEdges.add((NeuralNetEdge) s.readObject());
+		}
+		
+		for(NeuralNetEdge e : forwardEdges) {
+			e.getTo().backwardEdges.add(e);
+		}
 	}
 }

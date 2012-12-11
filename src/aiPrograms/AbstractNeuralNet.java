@@ -50,7 +50,6 @@ public abstract class AbstractNeuralNet implements AIProgram {
 
 	@Override
 	public void startGame(int playerNum) {
-		// TODO Auto-generated method stub
 		
 	}
 

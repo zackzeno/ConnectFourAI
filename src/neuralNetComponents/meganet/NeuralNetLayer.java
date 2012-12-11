@@ -23,7 +23,7 @@ public class NeuralNetLayer implements Serializable{
 	
 	public void addEdgeToAll(NeuralNetNode from) {
 		for(NeuralNetNode to : nodes) {
-			NeuralNetEdge e = new NeuralNetEdge(from, to, 0);
+			NeuralNetEdge e = new NeuralNetEdge(from, to, .01);
 			from.addForwardEdge(e);
 			to.addBackwardEdge(e);
 		}
@@ -36,7 +36,7 @@ public class NeuralNetLayer implements Serializable{
 		num = Math.exp(value);
 		
 		for(SoftmaxNode n : nodes) {
-			den += Math.exp(n.getValue());
+			den += Math.exp(n.getInputValue());
 		}
 		
 		return num / den;
@@ -45,6 +45,5 @@ public class NeuralNetLayer implements Serializable{
 	public NeuralNetNode[] getNodeArray() {
 		return nodes.toArray(new NeuralNetNode[nodes.size()]);
 	}
-	
 	
 }

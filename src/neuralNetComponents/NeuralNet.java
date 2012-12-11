@@ -27,16 +27,16 @@ public class NeuralNet implements Serializable {
 			}
 		}
 		for(int i = 0; i < netNodes[0].length; i++) {
-			netNodes[0][i].setValue(inputs[i]);
+			netNodes[0][i].setInputValue(inputs[i]);
 		}
-		for(int i = 0; i < nLayers - 1; i++) {
+		for(int i = 0; i < nLayers; i++) {
 			for(int j = 0; j < netNodes[i].length; j++) {
 				netNodes[i][j].forwardPropagate();
 			}
 		}
 		double[] outputValues = new double[netNodes[nLayers-1].length];
 		for(int i = 0; i < netNodes[nLayers-1].length; i++) {
-			outputValues[i] = netNodes[nLayers-1][i].getValue();
+			outputValues[i] = netNodes[nLayers-1][i].getActivationValue();
 		}
 		return outputValues;
 	}
@@ -60,7 +60,7 @@ public class NeuralNet implements Serializable {
 			for(int j = 0; j < netNodes[i].length; j++) {
 				res += "Node: " + netNodes[i][j].getNodeInfo();
 				res += "\n";
-				res += "Value: " + netNodes[i][j].getValue();
+				res += "Value: " + netNodes[i][j].getActivationValue();
 				res += "\n";
 				res += "Edges:";
 				res += "\n";
