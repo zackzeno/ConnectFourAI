@@ -85,6 +85,9 @@ public class Game implements Runnable {
 		int winningPlayer = -1;
 		players[0].startGame();
 		players[1].startGame();
+		if(observer != null) {
+			observer.startGame();
+		}
 		for(int n = 1; n <= nRounds; n++) {
 			ArrayList<MoveInfo> moveList = null;
 			if(observer != null) {
@@ -170,7 +173,7 @@ public class Game implements Runnable {
 			players[1].endRound(winningPlayer);
 			nRoundsPlayed++;
 			if(observer != null) {
-				observer.teachNeuralNet(moveList.toArray(new MoveInfo[0]), winningPlayer);
+				observer.teachNeuralNet(board.getSize(), moveList.toArray(new MoveInfo[0]), winningPlayer);
 			}
 			switch(winningPlayer) {
 				case 1:
@@ -221,6 +224,11 @@ public class Game implements Runnable {
 		}
 		players[0].endGame();
 		players[1].endGame();
+		
+		if(observer != null) {
+			observer.endGame();
+		}
+		
 		MainFrame.getMainFrame().repaint();
 	}
 }

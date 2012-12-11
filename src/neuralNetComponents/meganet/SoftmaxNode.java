@@ -4,6 +4,7 @@ import neuralNetComponents.NeuralNetNode;
 
 public class SoftmaxNode extends NeuralNetNode{
 	
+	private static final long serialVersionUID = 7120298997303025449L;
 	private NeuralNetLayer layer;
 	
 	public SoftmaxNode(NeuralNetLayer layer) {
@@ -13,7 +14,8 @@ public class SoftmaxNode extends NeuralNetNode{
 	
 	@Override
 	public double getActivationDerivative(double value) {
-		return value * (1 - value);
+		double s = getActivationValue(value);
+		return s * (1 - s);
 	}
 	
 	@Override
