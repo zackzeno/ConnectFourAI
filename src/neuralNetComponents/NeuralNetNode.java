@@ -15,7 +15,7 @@ public abstract class NeuralNetNode implements Serializable {
 	private double accumulatedValue;
 	private double activationValue;
 	
-	private static final double learningRate = .7;
+	private static final double learningRate = .2;
 	
 	public NeuralNetNode() {
 		forwardEdges = new ArrayList<NeuralNetEdge>();

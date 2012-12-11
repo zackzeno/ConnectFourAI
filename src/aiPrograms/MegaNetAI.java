@@ -1,11 +1,13 @@
 package aiPrograms;
 
+import enums.MoveResult;
 import gameComponents.Board;
 import gameComponents.MoveInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import neuralNetComponents.NeuralNet;
@@ -27,7 +29,7 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 	private PositionInputGroup[] inputLayer;
 	private List<NeuralNetLayer> hiddenLayers;
 	private SoftmaxLayer outputLayer;
-	
+	//private NeuralNetLayer outputLayer;
 	
 	public MegaNetAI(String loadFile, String saveFile, boolean logging) {
 		super(loadFile, saveFile, logging);
@@ -111,6 +113,9 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 			
 			double[] outputs = net.forwardPropagate(inputs);
 			
+			//System.out.println("Before train: " + Arrays.toString(outputs));
+			
+			
 			double[] expected = new double[outputs.length];
 			double[] error = new double[outputs.length];
 			
@@ -119,10 +124,16 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 				error[j] = expected[j] - outputs[j];
 			}
 			
+			//System.out.println("Error: " + Arrays.toString(error));
+			
 			if(moves[i].getPlayerNo() == winnerNum) {
 				net.backPropagate(error);
 			}
 			
+			double[] new_outputs = net.forwardPropagate(inputs);
+			
+			//System.out.println("After train: " + Arrays.toString(new_outputs));
+			//System.out.println();
 			
 			b.makeMove(moves[i].getColumn(), moves[i].getPlayerNo());
 		}
@@ -147,14 +158,23 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 	}
 	
 	public void initiateNeuralNet() {
+		
 		outputLayer = new SoftmaxLayer();
 		for(int i = 0; i < boardSize.cols; i++) {
 			new SoftmaxNode(outputLayer);
 		}
 		
+		
+		/*
+		outputLayer = new NeuralNetLayer();
+		for(int i = 0; i < boardSize.cols; i++) {
+			new SigmoidNode(outputLayer);
+		}
+		*/
+		
 		int numPositions = boardSize.cols * boardSize.rows * 3;
 		
-		hiddenLayers = createHiddenLayers(outputLayer, numPositions * 2);
+		hiddenLayers = createHiddenLayers(outputLayer, numPositions * 3, numPositions * 2);
 		
 		inputLayer = new PositionInputGroup[boardSize.cols * boardSize.rows];
 		for(int i = 0; i < inputLayer.length; i++) {
@@ -208,4 +228,106 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 			System.out.println("no log");
 		}
 	}
+	
+	
+	public static void main(String[] args) {
+		BoardSize s = new BoardSize(2, 2);
+		
+		MoveInfo[] m1 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 1, 0),
+			new MoveInfo(MoveResult.DEFAULT, 1, 1)
+			};
+		
+		MoveInfo[] m2 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 1, 1),
+			new MoveInfo(MoveResult.DEFAULT, 1, 0)
+			};
+		
+		MoveInfo[] m3 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 2, 0),
+			new MoveInfo(MoveResult.DEFAULT, 1, 1)
+			};
+		
+		MoveInfo[] m4 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 2, 1),
+			new MoveInfo(MoveResult.DEFAULT, 1, 0)
+			};
+		
+		MoveInfo[] m5 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 2, 0),
+			new MoveInfo(MoveResult.DEFAULT, 2, 0),
+			new MoveInfo(MoveResult.DEFAULT, 1, 1)
+			};
+		
+		MoveInfo[] m6 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 1, 0),
+			new MoveInfo(MoveResult.DEFAULT, 2, 0),
+			new MoveInfo(MoveResult.DEFAULT, 1, 1)
+			};
+		
+		MoveInfo[] m7 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 2, 1),
+			new MoveInfo(MoveResult.DEFAULT, 2, 1),
+			new MoveInfo(MoveResult.DEFAULT, 1, 0)
+			};
+		
+		MoveInfo[] m8 = new MoveInfo[] {
+			new MoveInfo(MoveResult.DEFAULT, 1, 1),
+			new MoveInfo(MoveResult.DEFAULT, 2, 1),
+			new MoveInfo(MoveResult.DEFAULT, 1, 0)
+			};
+		
+		
+		MegaNetAI ai = new MegaNetAI(null, null, true);
+		
+		List<MoveInfo[]> games = new ArrayList<MoveInfo[]>();
+		
+		games.add(m1);
+		games.add(m2);
+		games.add(m3);
+		games.add(m4);
+		games.add(m5);
+		games.add(m6);
+		games.add(m7);
+		games.add(m8);
+		
+		
+		ai.startGame();
+		
+		for(int i = 0; i < 1000; i++) {
+			Collections.shuffle(games);
+			
+			for(MoveInfo[] game : games) {
+				ai.teachNeuralNet(s, game, 1);
+			}
+		}
+		
+		ai.endGame();
+		
+		Board b = new Board(2, 2, 3);
+		
+		System.out.println(ai.makeMove(1, b).getColumn());
+		
+		System.out.println(ai.makeMove(1, b).getColumn());
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

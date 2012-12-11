@@ -23,7 +23,7 @@ public class NeuralNetLayer implements Serializable{
 	
 	public void addEdgeToAll(NeuralNetNode from) {
 		for(NeuralNetNode to : nodes) {
-			NeuralNetEdge e = new NeuralNetEdge(from, to, Math.random() * .01);
+			NeuralNetEdge e = new NeuralNetEdge(from, to, Math.random() * .01 + .005);
 			from.addForwardEdge(e);
 			to.addBackwardEdge(e);
 		}
