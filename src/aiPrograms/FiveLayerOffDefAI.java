@@ -109,7 +109,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		FourGroupNode[] middleLeftLayerOff = AIUtils.createGroupNodes(board);
 		FourGroupNode[] middleRightLayerOff = AIUtils.createGroupNodes(board);
 		OffDefJoinNode[] outputLayerOff = new OffDefJoinNode[boardSize.cols*boardSize.rows];
-		for(int i = 0; i < inputLayerOff.length; i++) {
+		for(int i = 0; i < outputLayerOff.length; i++) {
 			outputLayerOff[i] = new OffDefJoinNode(indexToPos(i));
 		}
 		for(int i = 0; i < middleLeftLayerOff.length; i++) { 
@@ -144,7 +144,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		FourGroupNode[] middleLeftLayerDef = AIUtils.createGroupNodes(board);
 		FourGroupNode[] middleRightLayerDef = AIUtils.createGroupNodes(board);
 		OffDefJoinNode[] outputLayerDef = new OffDefJoinNode[boardSize.cols*boardSize.rows];
-		for(int i = 0; i < inputLayerDef.length; i++) {
+		for(int i = 0; i < outputLayerDef.length; i++) {
 			outputLayerDef[i] = new OffDefJoinNode(indexToPos(i));
 		}
 		for(int i = 0; i < middleLeftLayerDef.length; i++) { 
@@ -191,7 +191,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 				middleLeftLayerOff, middleLeftLayerDef);
 		nodes[2] = (NeuralNetNode[])AIUtils.arrayConcatenate(new FourGroupNode[2*middleRightLayerOff.length], 
 				middleRightLayerOff, middleRightLayerDef);
-		nodes[3] = (NeuralNetNode[])AIUtils.arrayConcatenate(new PositionNode[2*outputLayerOff.length], outputLayerOff, outputLayerDef);
+		nodes[3] = (NeuralNetNode[])AIUtils.arrayConcatenate(new OffDefJoinNode[2*outputLayerOff.length], outputLayerOff, outputLayerDef);
 		nodes[4] = outputLayer;
 		net = new NeuralNet(nodes);
 	}
@@ -227,7 +227,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 	}
 	
 	public BoardPos[] getNeuralNetMove(Board currentBoard, int playerNum) {
-		double[] inputs = new double[boardSize.rows*boardSize.cols];
+		double[] inputs = new double[2*boardSize.rows*boardSize.cols];
 		double[] outputs = new double[boardSize.rows*boardSize.cols];
 		for(int i = 0; i < boardSize.rows; i++) {
 			for(int j = 0; j < boardSize.cols; j++) {

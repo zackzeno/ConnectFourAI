@@ -119,7 +119,7 @@ public class FourLayerNeuralNetAI extends AbstractNeuralNet  {
 		FourGroupNode[] middleLeftLayer = AIUtils.createGroupNodes(board);
 		FourGroupNode[] middleRightLayer = AIUtils.createGroupNodes(board);
 		PositionNode[] outputLayer = new PositionNode[boardSize.cols*boardSize.rows];
-		for(int i = 0; i < inputLayer.length; i++) {
+		for(int i = 0; i < outputLayer.length; i++) {
 			outputLayer[i] = new PositionNode(indexToPos(i));
 		}
 		for(int i = 0; i < middleLeftLayer.length; i++) { 

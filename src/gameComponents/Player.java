@@ -1,5 +1,6 @@
 package gameComponents;
 
+import aiPrograms.FiveLayerOffDefAI;
 import aiPrograms.FourLayerNeuralNetAI;
 import aiPrograms.MegaNetAI;
 import aiPrograms.MinimaxAI;
@@ -13,7 +14,7 @@ public class Player {
 	public static final String[] playerTypes = {"Human", "Random Mover", "Value Heuristic", "Simple Neural Net", "Four Layer Net", 
 		"Five Layer Net", "Mega Net", "Minimax"}; 
 	public static final String[] observerTypes = {"None", "Mega Net"};
-	public static final String[] neuralNetTypes = {"Four Layer Net", "Five Layer Net", "Mega Net"};
+	public static final String[] neuralNetTypes = {"Four Layer Net", "Five Layer Net", "Mega Net", "Simple Neural Net"};
 	
 	
 	private int playerNum;
@@ -43,18 +44,21 @@ public class Player {
 			return new RandomMoveAI();
 		}
 		else if(aiType.equals("Value Heuristic")) {
-			return new MoveValueHeuristicAI(); 
+			return new MoveValueHeuristicAI();
 		}
 		else if(aiType.equals("Simple Neural Net")) {
-			return new SimpleNeuralNetAI();
+			return new SimpleNeuralNetAI((String)params[0], (String)params[1], logAI);
 		}
 		else if(aiType.equals("Four Layer Net")) {
 			return new FourLayerNeuralNetAI((String)params[0], (String)params[1], logAI);
 		}
+		else if(aiType.equals("Five Layer Net")) {
+			return new FiveLayerOffDefAI((String)params[0], (String)params[1], logAI);
+		}
 		else if(aiType.equals("Mega Net")) {
 			return new MegaNetAI((String)params[0], (String)params[1], logAI);
 		}
-		// TODO insert 'else if' for each new ai type here (copy above syntax, send params from call to createAI)
+		// TODO insert 'else if' for each new ai type here (copy above syntax)
 		else if(aiType.equals("Minimax")) {
 			return new MinimaxAI((Integer)params[0], (Integer)params[1], (Integer)params[2]);
 		}
