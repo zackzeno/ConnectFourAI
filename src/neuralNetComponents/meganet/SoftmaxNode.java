@@ -5,9 +5,9 @@ import neuralNetComponents.NeuralNetNode;
 public class SoftmaxNode extends NeuralNetNode{
 	
 	private static final long serialVersionUID = 7120298997303025449L;
-	private NeuralNetLayer layer;
+	private SoftmaxLayer layer;
 	
-	public SoftmaxNode(NeuralNetLayer layer) {
+	public SoftmaxNode(SoftmaxLayer layer) {
 		this.layer = layer;
 		layer.addNode(this);
 	}

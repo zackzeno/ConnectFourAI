@@ -86,6 +86,7 @@ public class NeuralNet implements Serializable {
 				ObjectOutputStream os = new ObjectOutputStream(s);
 				os.writeObject(this);
 				os.close();
+				System.out.println("finished writing");
 			} 
 			catch (IOException e) {
 				System.exit(0);
@@ -101,6 +102,7 @@ public class NeuralNet implements Serializable {
 				ObjectInputStream os = new ObjectInputStream(s);
 				NeuralNet importNet = (NeuralNet)os.readObject();
 				os.close();
+				System.out.println("finished reading");
 				return importNet;
 			}
 			catch(IOException e) {

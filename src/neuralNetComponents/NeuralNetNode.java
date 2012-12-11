@@ -81,33 +81,9 @@ public abstract class NeuralNetNode implements Serializable {
 		for(int i = 0; i < backwardEdges.size(); i++) {
 			NeuralNetNode bNode = backwardEdges.get(i).getFrom();
 			bNode.backAccumulate(accumulatedDelta*backwardEdges.get(i).getWeight());
-			backwardEdges.get(i).modifyWeight(learningRate*accumulatedDelta*bNode.accumulatedValue);
+			backwardEdges.get(i).modifyWeight(learningRate*accumulatedDelta*bNode.activationValue);
 		}
 	}
-	
-	/*
-	public void backPropagate(double reinforcementModifier) {
-		if(reinforcementModifier == 1) {
-			return;
-		}
-		int numFiredBack = 0;
-		for(int i = 0; i < backwardEdges.size(); i++) {
-			if(backwardEdges.get(i).getFrom().hasFired()) {
-				numFiredBack++;
-			}
-		}
-		if(numFiredBack == 0) {
-			return;
-		}
-		double modifier = Math.pow(reinforcementModifier, 1./numFiredBack);
-		for(int i = 0; i < backwardEdges.size(); i++) {
-			if(backwardEdges.get(i).getFrom().hasFired()) {
-				backwardEdges.get(i).modifyWeight(modifier);
-				backwardEdges.get(i).getFrom().backPropagate(modifier);
-			}
-		}
-	}
-	*/
 
 	public ArrayList<NeuralNetEdge> getOutEdges() {
 		return forwardEdges;

@@ -5,12 +5,15 @@ import gameComponents.MoveInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import neuralNetComponents.NeuralNet;
 import neuralNetComponents.NeuralNetNode;
 import neuralNetComponents.meganet.NeuralNetLayer;
 import neuralNetComponents.meganet.PositionInputGroup;
+import neuralNetComponents.meganet.SigmoidNode;
+import neuralNetComponents.meganet.SoftmaxLayer;
 import neuralNetComponents.meganet.SoftmaxNode;
 import utils.BoardSize;
 import aiPrograms.interfaces.Teachable;
@@ -23,7 +26,7 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 	
 	private PositionInputGroup[] inputLayer;
 	private List<NeuralNetLayer> hiddenLayers;
-	private NeuralNetLayer outputLayer;
+	private SoftmaxLayer outputLayer;
 	
 	
 	public MegaNetAI(String loadFile, String saveFile, boolean logging) {
@@ -55,23 +58,9 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 		int bestMove = -1;
 		double bestScore = -1;
 		for(int i = 0; i < outputs.length; i++) {
-			if(outputs[i] > bestScore) {
+			if(board.isFeasibleMove(i) && outputs[i] > bestScore) {
 				bestMove = i;
 				bestScore = outputs[i];
-			}
-		}
-		
-		if(bestMove == -1) {
-			bestMove = (int) (Math.random() * outputs.length);
-		}
-		
-		if(logOut != null) {
-			try {
-				logOut.write(net.getNetInfo());
-				logOut.flush();
-			} 
-			catch (IOException e) {
-				e.printStackTrace();
 			}
 		}
 		
@@ -122,15 +111,18 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 			
 			double[] outputs = net.forwardPropagate(inputs);
 			
+			double[] expected = new double[outputs.length];
 			double[] error = new double[outputs.length];
-			if(moves[i].getPlayerNo() == winnerNum) {
-				error[moves[i].getColumn()] = 1;
-			}
-			else {
-				error[moves[i].getColumn()] = -1;
+			
+			expected[moves[i].getColumn()] = 1;
+			for(int j = 0; j < error.length; j++) {
+				error[j] = expected[j] - outputs[j];
 			}
 			
-			net.backPropagate(error);
+			if(moves[i].getPlayerNo() == winnerNum) {
+				net.backPropagate(error);
+			}
+			
 			
 			b.makeMove(moves[i].getColumn(), moves[i].getPlayerNo());
 		}
@@ -144,7 +136,7 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 		for(int i = sizes.length - 1; i >= 0; i--) {
 			NeuralNetLayer l = new NeuralNetLayer();
 			for(int j = 0; j < sizes[i]; j++) {
-				SoftmaxNode n = new SoftmaxNode(l);
+				SigmoidNode n = new SigmoidNode(l);
 				prev.addEdgeToAll(n);
 			}
 			prev = l;
@@ -155,7 +147,7 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 	}
 	
 	public void initiateNeuralNet() {
-		outputLayer = new NeuralNetLayer();
+		outputLayer = new SoftmaxLayer();
 		for(int i = 0; i < boardSize.cols; i++) {
 			new SoftmaxNode(outputLayer);
 		}
@@ -195,13 +187,25 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 	public void startGame() {
 		super.startGame(0);
 		
-		System.out.println("finished reading");
 	}
 
 	@Override
 	public void endGame() {
 		super.endGame(0);
 		
-		System.out.println("finished writing");
+		if(logOut != null) {
+			try {
+				System.out.println("start log");
+				logOut.write(net.getNetInfo());
+				logOut.flush();
+				System.out.println("log printed");
+			} 
+			catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		else {
+			System.out.println("no log");
+		}
 	}
 }
