@@ -6,7 +6,6 @@ import gameComponents.MoveInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -294,12 +293,30 @@ public class MegaNetAI extends AbstractNeuralNet implements Teachable{
 		
 		ai.startGame();
 		
-		for(int i = 0; i < 1000; i++) {
+		boolean run = false;
+		
+		for(int i = 0; i < 10000; i++) {
 			Collections.shuffle(games);
 			
 			for(MoveInfo[] game : games) {
 				ai.teachNeuralNet(s, game, 1);
 			}
+			
+			Board b = new Board(2, 2, 3);
+		
+			if(ai.makeMove(1, b).getColumn() != ai.makeMove(1, b).getColumn()) {
+				if(run == false) {
+					run = true;
+					System.out.print(i + " - ");
+				}
+			}
+			else {
+				if(run == true) {
+					System.out.println(i - 1);
+				}
+				run = false;
+			}
+			
 		}
 		
 		ai.endGame();
