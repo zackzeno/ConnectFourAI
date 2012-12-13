@@ -11,35 +11,22 @@ import neuralNetComponents.NeuralNetNode;
 public class NeuralNetLayer implements Serializable{
 	
 	private static final long serialVersionUID = -6227011591188981200L;
-	private ArrayList<SoftmaxNode> nodes;
+	protected ArrayList<NeuralNetNode> nodes;
 	
 	public NeuralNetLayer() {
-		nodes = new ArrayList<SoftmaxNode>();
+		nodes = new ArrayList<NeuralNetNode>();
 	}
 	
-	public void addNode(SoftmaxNode node) {
+	public void addNode(NeuralNetNode node) {
 		nodes.add(node);
 	}
 	
 	public void addEdgeToAll(NeuralNetNode from) {
 		for(NeuralNetNode to : nodes) {
-			NeuralNetEdge e = new NeuralNetEdge(from, to, .01);
+			NeuralNetEdge e = new NeuralNetEdge(from, to, Math.random() * .01 + .005);
 			from.addForwardEdge(e);
 			to.addBackwardEdge(e);
 		}
-	}
-	
-	public double getSoftmaxValue(double value) {
-		double num = 0;
-		double den = 0;
-		
-		num = Math.exp(value);
-		
-		for(SoftmaxNode n : nodes) {
-			den += Math.exp(n.getInputValue());
-		}
-		
-		return num / den;
 	}
 	
 	public NeuralNetNode[] getNodeArray() {

@@ -95,6 +95,10 @@ public class Board {
 		return false;
 	}
 	
+	public boolean isFeasibleMove(int colIndex) {
+		return getEmptyRow(colIndex) != -1;
+	}
+	
 	public int checkGameComplete(BoardPos lastMove) {
 		int consec;
 		BoardPos currentPos;

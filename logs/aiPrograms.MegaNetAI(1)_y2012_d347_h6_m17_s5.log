@@ -1,0 +1,1572 @@
+Printing neural net statistics for layer 0
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight 0.01226344507388568
+--> to Sigmoid node, weight 0.01410592684307553
+--> to Sigmoid node, weight 0.006278510183297633
+--> to Sigmoid node, weight 0.005386824633151614
+--> to Sigmoid node, weight 0.007849319835764652
+--> to Sigmoid node, weight 0.008262971556325036
+--> to Sigmoid node, weight 0.005464865950814294
+--> to Sigmoid node, weight 0.012808620305372286
+--> to Sigmoid node, weight 0.012209711513210028
+--> to Sigmoid node, weight 0.008514100083656818
+--> to Sigmoid node, weight 0.012535124000220728
+--> to Sigmoid node, weight 0.006448759236911715
+--> to Sigmoid node, weight 0.010933898944154969
+--> to Sigmoid node, weight 0.013189565658467926
+--> to Sigmoid node, weight 0.012033926897788347
+--> to Sigmoid node, weight 0.009147586977948605
+--> to Sigmoid node, weight 0.011976255996828142
+--> to Sigmoid node, weight 0.00850041433464134
+--> to Sigmoid node, weight 0.0055671414483302525
+--> to Sigmoid node, weight 0.010249418132173772
+--> to Sigmoid node, weight 0.012053308605282276
+--> to Sigmoid node, weight 0.0085700652676322
+--> to Sigmoid node, weight 0.01283446462224238
+--> to Sigmoid node, weight 0.009371111879599265
+--> to Sigmoid node, weight 0.006772414235473891
+--> to Sigmoid node, weight 0.010240373537444482
+--> to Sigmoid node, weight 0.006663580529105887
+--> to Sigmoid node, weight 0.014303195955817492
+--> to Sigmoid node, weight 0.013999205293738826
+--> to Sigmoid node, weight 0.009183245255716366
+--> to Sigmoid node, weight 0.007339139605957662
+--> to Sigmoid node, weight 0.009618547918065148
+--> to Sigmoid node, weight 0.012871327886475742
+--> to Sigmoid node, weight 0.013389886225876682
+--> to Sigmoid node, weight 0.008326479963136001
+--> to Sigmoid node, weight 0.012260915484847194
+Node: Input Node
+Value: 1.0
+Edges:
+--> to Sigmoid node, weight 0.07175359380220661
+--> to Sigmoid node, weight 0.06185382135186411
+--> to Sigmoid node, weight 0.0629008854920227
+--> to Sigmoid node, weight 0.06989363857717498
+--> to Sigmoid node, weight 0.07190026306192888
+--> to Sigmoid node, weight 0.07863051868232908
+--> to Sigmoid node, weight 0.061017645808291124
+--> to Sigmoid node, weight 0.052518020928761774
+--> to Sigmoid node, weight 0.0733340613244662
+--> to Sigmoid node, weight 0.07997976569689831
+--> to Sigmoid node, weight 0.09230825990050197
+--> to Sigmoid node, weight 0.04611653256330431
+--> to Sigmoid node, weight 0.08296101729565097
+--> to Sigmoid node, weight 0.0727013213546753
+--> to Sigmoid node, weight 0.0643413661184862
+--> to Sigmoid node, weight 0.07089761402138961
+--> to Sigmoid node, weight 0.07136911967030792
+--> to Sigmoid node, weight 0.06546718115766717
+--> to Sigmoid node, weight 0.05231051658214044
+--> to Sigmoid node, weight 0.06100169874418131
+--> to Sigmoid node, weight 0.0553147974585864
+--> to Sigmoid node, weight 0.06393948836230263
+--> to Sigmoid node, weight 0.06972478225075343
+--> to Sigmoid node, weight 0.05424829942425504
+--> to Sigmoid node, weight 0.0721040748042969
+--> to Sigmoid node, weight 0.0574638610909386
+--> to Sigmoid node, weight 0.10103526321353876
+--> to Sigmoid node, weight 0.05525009809118166
+--> to Sigmoid node, weight 0.09262571179498284
+--> to Sigmoid node, weight 0.03912977875941964
+--> to Sigmoid node, weight 0.049328019682418456
+--> to Sigmoid node, weight 0.07525245036764093
+--> to Sigmoid node, weight 0.07297562154471228
+--> to Sigmoid node, weight 0.08422406945103171
+--> to Sigmoid node, weight 0.0823477543251879
+--> to Sigmoid node, weight 0.05612979702497227
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight -0.034233910784910115
+--> to Sigmoid node, weight -0.03194471463887754
+--> to Sigmoid node, weight -0.03793740616568766
+--> to Sigmoid node, weight -0.041059159673325
+--> to Sigmoid node, weight -0.03192231997607705
+--> to Sigmoid node, weight -0.03825557113518796
+--> to Sigmoid node, weight -0.030583608805986057
+--> to Sigmoid node, weight -0.032670900627731474
+--> to Sigmoid node, weight -0.0343361591559387
+--> to Sigmoid node, weight -0.03825295064158583
+--> to Sigmoid node, weight -0.038108912586556756
+--> to Sigmoid node, weight -0.03138492369910714
+--> to Sigmoid node, weight -0.039191162185115314
+--> to Sigmoid node, weight -0.032919107200998055
+--> to Sigmoid node, weight -0.03476830588965246
+--> to Sigmoid node, weight -0.03331764864318519
+--> to Sigmoid node, weight -0.04229975045736599
+--> to Sigmoid node, weight -0.03623239227175545
+--> to Sigmoid node, weight -0.032823003261634794
+--> to Sigmoid node, weight -0.03801515294272423
+--> to Sigmoid node, weight -0.034191235949104844
+--> to Sigmoid node, weight -0.037363494841610785
+--> to Sigmoid node, weight -0.031538633922186435
+--> to Sigmoid node, weight -0.031027250098191354
+--> to Sigmoid node, weight -0.03447358758230148
+--> to Sigmoid node, weight -0.034929192265805
+--> to Sigmoid node, weight -0.043520001612024205
+--> to Sigmoid node, weight -0.027711189705526055
+--> to Sigmoid node, weight -0.045886342166821574
+--> to Sigmoid node, weight -0.02835128925995171
+--> to Sigmoid node, weight -0.03235834376104688
+--> to Sigmoid node, weight -0.03486423226480945
+--> to Sigmoid node, weight -0.041103611511991975
+--> to Sigmoid node, weight -0.041441033409153415
+--> to Sigmoid node, weight -0.036917931441303384
+--> to Sigmoid node, weight -0.03710151293596458
+Node: Input Node
+Value: 1.0
+Edges:
+--> to Sigmoid node, weight -0.1115953346684841
+--> to Sigmoid node, weight -0.10077176230806632
+--> to Sigmoid node, weight -0.10883617450546516
+--> to Sigmoid node, weight -0.10901777881427821
+--> to Sigmoid node, weight -0.11219331274112382
+--> to Sigmoid node, weight -0.11697569469394987
+--> to Sigmoid node, weight -0.10716815552922719
+--> to Sigmoid node, weight -0.09851930026943646
+--> to Sigmoid node, weight -0.10462003339681518
+--> to Sigmoid node, weight -0.10747469339195909
+--> to Sigmoid node, weight -0.11378391156262414
+--> to Sigmoid node, weight -0.09119237004057713
+--> to Sigmoid node, weight -0.11508905707909158
+--> to Sigmoid node, weight -0.11052549736092952
+--> to Sigmoid node, weight -0.109002467392444
+--> to Sigmoid node, weight -0.10613245815179385
+--> to Sigmoid node, weight -0.11071334300692201
+--> to Sigmoid node, weight -0.10693531809700482
+--> to Sigmoid node, weight -0.10362527740284717
+--> to Sigmoid node, weight -0.10810916606864285
+--> to Sigmoid node, weight -0.10006218168797748
+--> to Sigmoid node, weight -0.11092922863251446
+--> to Sigmoid node, weight -0.10198946014034943
+--> to Sigmoid node, weight -0.09656740151616072
+--> to Sigmoid node, weight -0.10753364428228204
+--> to Sigmoid node, weight -0.1033559228089879
+--> to Sigmoid node, weight -0.12492402127353272
+--> to Sigmoid node, weight -0.09591263874845367
+--> to Sigmoid node, weight -0.11919492135090452
+--> to Sigmoid node, weight -0.09859125331065419
+--> to Sigmoid node, weight -0.0965495372264581
+--> to Sigmoid node, weight -0.11040288829733694
+--> to Sigmoid node, weight -0.10886395081436902
+--> to Sigmoid node, weight -0.11728309654686675
+--> to Sigmoid node, weight -0.11367793385853868
+--> to Sigmoid node, weight -0.1043913404040453
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight 0.26237696883418965
+--> to Sigmoid node, weight 0.24230836625353822
+--> to Sigmoid node, weight 0.2542146243567632
+--> to Sigmoid node, weight 0.26597358589201786
+--> to Sigmoid node, weight 0.2703481244914916
+--> to Sigmoid node, weight 0.282807356104895
+--> to Sigmoid node, weight 0.25338359975949815
+--> to Sigmoid node, weight 0.23589427002424565
+--> to Sigmoid node, weight 0.26223230032136746
+--> to Sigmoid node, weight 0.26833554800689297
+--> to Sigmoid node, weight 0.2989217940862827
+--> to Sigmoid node, weight 0.2159728257643519
+--> to Sigmoid node, weight 0.2900424559083379
+--> to Sigmoid node, weight 0.2654418090664271
+--> to Sigmoid node, weight 0.2559821382011031
+--> to Sigmoid node, weight 0.26647796041368577
+--> to Sigmoid node, weight 0.2730060140101793
+--> to Sigmoid node, weight 0.2499511393911367
+--> to Sigmoid node, weight 0.23896168486379912
+--> to Sigmoid node, weight 0.24469270494930306
+--> to Sigmoid node, weight 0.2431374611007524
+--> to Sigmoid node, weight 0.2601970890350327
+--> to Sigmoid node, weight 0.26339310547736283
+--> to Sigmoid node, weight 0.23132974059237216
+--> to Sigmoid node, weight 0.2645915326727209
+--> to Sigmoid node, weight 0.2534260088535439
+--> to Sigmoid node, weight 0.3174687876703171
+--> to Sigmoid node, weight 0.23400745402679185
+--> to Sigmoid node, weight 0.3058911184078512
+--> to Sigmoid node, weight 0.21673024452959957
+--> to Sigmoid node, weight 0.22996311659709961
+--> to Sigmoid node, weight 0.27705223740115364
+--> to Sigmoid node, weight 0.2729989861637354
+--> to Sigmoid node, weight 0.2930133960936096
+--> to Sigmoid node, weight 0.2849243030720083
+--> to Sigmoid node, weight 0.24809140312190137
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight -0.11294299677854502
+--> to Sigmoid node, weight -0.11070438977547177
+--> to Sigmoid node, weight -0.10720003842966382
+--> to Sigmoid node, weight -0.11097575359000207
+--> to Sigmoid node, weight -0.11402769951997636
+--> to Sigmoid node, weight -0.11569229631609503
+--> to Sigmoid node, weight -0.11279356321526617
+--> to Sigmoid node, weight -0.10307245815756265
+--> to Sigmoid node, weight -0.11226006399297324
+--> to Sigmoid node, weight -0.11768575840788106
+--> to Sigmoid node, weight -0.12437543123968277
+--> to Sigmoid node, weight -0.09629124802232489
+--> to Sigmoid node, weight -0.12344521818259464
+--> to Sigmoid node, weight -0.11532243908977467
+--> to Sigmoid node, weight -0.10786233726341424
+--> to Sigmoid node, weight -0.11607594180162711
+--> to Sigmoid node, weight -0.11119966099626508
+--> to Sigmoid node, weight -0.11071752739485058
+--> to Sigmoid node, weight -0.10532649963491407
+--> to Sigmoid node, weight -0.10685573098279966
+--> to Sigmoid node, weight -0.10959364592603459
+--> to Sigmoid node, weight -0.1158611343895252
+--> to Sigmoid node, weight -0.1077773628649055
+--> to Sigmoid node, weight -0.09997098812050657
+--> to Sigmoid node, weight -0.11086187564750713
+--> to Sigmoid node, weight -0.10851299764091892
+--> to Sigmoid node, weight -0.12744574667787897
+--> to Sigmoid node, weight -0.1070649527064042
+--> to Sigmoid node, weight -0.12350275877215658
+--> to Sigmoid node, weight -0.09961990296762395
+--> to Sigmoid node, weight -0.09973479986924134
+--> to Sigmoid node, weight -0.11419650536794666
+--> to Sigmoid node, weight -0.11355491207129002
+--> to Sigmoid node, weight -0.12212779026499372
+--> to Sigmoid node, weight -0.1178896934188426
+--> to Sigmoid node, weight -0.10944106742918011
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight 0.01118923518097233
+--> to Sigmoid node, weight 0.007864354948612514
+--> to Sigmoid node, weight 0.00644131716156719
+--> to Sigmoid node, weight 0.008539580792480631
+--> to Sigmoid node, weight 0.007894875459587083
+--> to Sigmoid node, weight 0.005982802762215196
+--> to Sigmoid node, weight 0.012749842309954101
+--> to Sigmoid node, weight 0.011100387626427895
+--> to Sigmoid node, weight 0.012733672933544316
+--> to Sigmoid node, weight 0.010445439592585821
+--> to Sigmoid node, weight 0.011354654268643943
+--> to Sigmoid node, weight 0.014626461670092746
+--> to Sigmoid node, weight 0.008669968625185428
+--> to Sigmoid node, weight 0.011974747871527101
+--> to Sigmoid node, weight 0.006505660792184162
+--> to Sigmoid node, weight 0.009968904749812919
+--> to Sigmoid node, weight 0.007365068429010692
+--> to Sigmoid node, weight 0.014857446073856997
+--> to Sigmoid node, weight 0.007139457662002205
+--> to Sigmoid node, weight 0.007590119117603907
+--> to Sigmoid node, weight 0.011527421685155467
+--> to Sigmoid node, weight 0.012044027514728054
+--> to Sigmoid node, weight 0.014022219757043979
+--> to Sigmoid node, weight 0.005246471032558812
+--> to Sigmoid node, weight 0.006089025716333735
+--> to Sigmoid node, weight 0.012143753651623079
+--> to Sigmoid node, weight 0.008283670592729242
+--> to Sigmoid node, weight 0.012891272014688381
+--> to Sigmoid node, weight 0.011523793901810832
+--> to Sigmoid node, weight 0.014748514926606317
+--> to Sigmoid node, weight 0.006381496324045678
+--> to Sigmoid node, weight 0.01471293056081258
+--> to Sigmoid node, weight 0.012399009981250025
+--> to Sigmoid node, weight 0.011934985415473765
+--> to Sigmoid node, weight 0.010217212417579348
+--> to Sigmoid node, weight 0.009795399090626794
+Node: Input Node
+Value: 1.0
+Edges:
+--> to Sigmoid node, weight -0.004671930262821796
+--> to Sigmoid node, weight -0.016724121798213296
+--> to Sigmoid node, weight -0.01128313200405534
+--> to Sigmoid node, weight -0.004930190579060278
+--> to Sigmoid node, weight -0.0038451620706271765
+--> to Sigmoid node, weight -0.004913158159521737
+--> to Sigmoid node, weight -0.008025789689593351
+--> to Sigmoid node, weight -0.017264958153559582
+--> to Sigmoid node, weight -0.008629758276542577
+--> to Sigmoid node, weight -0.0023558465286031703
+--> to Sigmoid node, weight -0.0016810751259868466
+--> to Sigmoid node, weight -0.023527810803051115
+--> to Sigmoid node, weight -0.004693071081117606
+--> to Sigmoid node, weight -0.004570912725123022
+--> to Sigmoid node, weight -0.00808218208447976
+--> to Sigmoid node, weight -0.002922611713795137
+--> to Sigmoid node, weight -0.0016354842095273384
+--> to Sigmoid node, weight -0.009675302421427844
+--> to Sigmoid node, weight -0.019123674622971664
+--> to Sigmoid node, weight -0.01017641753121115
+--> to Sigmoid node, weight -0.014033913131228419
+--> to Sigmoid node, weight -0.0054361129266433834
+--> to Sigmoid node, weight -0.013298825134508802
+--> to Sigmoid node, weight -0.021856735144873064
+--> to Sigmoid node, weight -0.004632235605057058
+--> to Sigmoid node, weight -0.015375633015745255
+--> to Sigmoid node, weight 0.012522001470195892
+--> to Sigmoid node, weight -0.013888012256151813
+--> to Sigmoid node, weight -2.6767257802787236E-4
+--> to Sigmoid node, weight -0.02116453030265389
+--> to Sigmoid node, weight -0.020825088027260408
+--> to Sigmoid node, weight -0.007718801978502705
+--> to Sigmoid node, weight -0.0021182497544825324
+--> to Sigmoid node, weight -0.001302653511505935
+--> to Sigmoid node, weight -0.005337009342028568
+--> to Sigmoid node, weight -0.010503785979580064
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight 0.040495538930813736
+--> to Sigmoid node, weight 0.0433443380651621
+--> to Sigmoid node, weight 0.043666389760511314
+--> to Sigmoid node, weight 0.0459739085758567
+--> to Sigmoid node, weight 0.03891136246803483
+--> to Sigmoid node, weight 0.04655573386622701
+--> to Sigmoid node, weight 0.041041733566965506
+--> to Sigmoid node, weight 0.04265082582650716
+--> to Sigmoid node, weight 0.040200672086230675
+--> to Sigmoid node, weight 0.043723211548862786
+--> to Sigmoid node, weight 0.04553191705546453
+--> to Sigmoid node, weight 0.03210983421766882
+--> to Sigmoid node, weight 0.04064536324467713
+--> to Sigmoid node, weight 0.04125633791689449
+--> to Sigmoid node, weight 0.03930440743093391
+--> to Sigmoid node, weight 0.03831299410076582
+--> to Sigmoid node, weight 0.04380826906358996
+--> to Sigmoid node, weight 0.03696383652997559
+--> to Sigmoid node, weight 0.04229025511832546
+--> to Sigmoid node, weight 0.036340594414376294
+--> to Sigmoid node, weight 0.0342277257068904
+--> to Sigmoid node, weight 0.04147231154991991
+--> to Sigmoid node, weight 0.04566335137271867
+--> to Sigmoid node, weight 0.03580981664930991
+--> to Sigmoid node, weight 0.03980840835457002
+--> to Sigmoid node, weight 0.04419620937964198
+--> to Sigmoid node, weight 0.04845865072758105
+--> to Sigmoid node, weight 0.03835633193173224
+--> to Sigmoid node, weight 0.05154739554482461
+--> to Sigmoid node, weight 0.038267712522019943
+--> to Sigmoid node, weight 0.032498139614628184
+--> to Sigmoid node, weight 0.04069411715486695
+--> to Sigmoid node, weight 0.04605310605779677
+--> to Sigmoid node, weight 0.048511473119849165
+--> to Sigmoid node, weight 0.04691422965127692
+--> to Sigmoid node, weight 0.04018744115521823
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight 0.12047906865383964
+--> to Sigmoid node, weight 0.11859474127479713
+--> to Sigmoid node, weight 0.12330581592428945
+--> to Sigmoid node, weight 0.12489773891324853
+--> to Sigmoid node, weight 0.1282786984013039
+--> to Sigmoid node, weight 0.13211648118669245
+--> to Sigmoid node, weight 0.11862434783138988
+--> to Sigmoid node, weight 0.1167995238103596
+--> to Sigmoid node, weight 0.12243004624826667
+--> to Sigmoid node, weight 0.13109480353145658
+--> to Sigmoid node, weight 0.13676089640094047
+--> to Sigmoid node, weight 0.11189490727461349
+--> to Sigmoid node, weight 0.13115131189115437
+--> to Sigmoid node, weight 0.12778775117752983
+--> to Sigmoid node, weight 0.11965684824652263
+--> to Sigmoid node, weight 0.12892801192584097
+--> to Sigmoid node, weight 0.12275487391140927
+--> to Sigmoid node, weight 0.1193720985921677
+--> to Sigmoid node, weight 0.12387518905811912
+--> to Sigmoid node, weight 0.11906145674428241
+--> to Sigmoid node, weight 0.11872887743395237
+--> to Sigmoid node, weight 0.12505322517614298
+--> to Sigmoid node, weight 0.1212606769030055
+--> to Sigmoid node, weight 0.11670776538379284
+--> to Sigmoid node, weight 0.12969922595653421
+--> to Sigmoid node, weight 0.11923250756979692
+--> to Sigmoid node, weight 0.14278840964623807
+--> to Sigmoid node, weight 0.11261943985943973
+--> to Sigmoid node, weight 0.13962141047001725
+--> to Sigmoid node, weight 0.11466216196726227
+--> to Sigmoid node, weight 0.11364261832219535
+--> to Sigmoid node, weight 0.1326330283190359
+--> to Sigmoid node, weight 0.12962570455030878
+--> to Sigmoid node, weight 0.13181921494224152
+--> to Sigmoid node, weight 0.12782454528056625
+--> to Sigmoid node, weight 0.11831758424764748
+Node: Input Node
+Value: 1.0
+Edges:
+--> to Sigmoid node, weight -0.19572564956829233
+--> to Sigmoid node, weight -0.20016660588009252
+--> to Sigmoid node, weight -0.202673971447542
+--> to Sigmoid node, weight -0.19939516804744517
+--> to Sigmoid node, weight -0.1966632593351925
+--> to Sigmoid node, weight -0.20154420340292573
+--> to Sigmoid node, weight -0.19896886351266413
+--> to Sigmoid node, weight -0.19832109379771087
+--> to Sigmoid node, weight -0.20221098497861076
+--> to Sigmoid node, weight -0.19675325032027335
+--> to Sigmoid node, weight -0.2009396068513868
+--> to Sigmoid node, weight -0.19294360172103883
+--> to Sigmoid node, weight -0.20465109269902199
+--> to Sigmoid node, weight -0.20273564822160892
+--> to Sigmoid node, weight -0.19508992992586896
+--> to Sigmoid node, weight -0.20143632032186698
+--> to Sigmoid node, weight -0.20217256737805084
+--> to Sigmoid node, weight -0.2023105554643134
+--> to Sigmoid node, weight -0.1963279352152976
+--> to Sigmoid node, weight -0.20358175952585145
+--> to Sigmoid node, weight -0.19434839313620644
+--> to Sigmoid node, weight -0.195595180665326
+--> to Sigmoid node, weight -0.20293788230203194
+--> to Sigmoid node, weight -0.19788352918557447
+--> to Sigmoid node, weight -0.19366609352758188
+--> to Sigmoid node, weight -0.20367107996750625
+--> to Sigmoid node, weight -0.20086062100185603
+--> to Sigmoid node, weight -0.19351565961619444
+--> to Sigmoid node, weight -0.1947479252110199
+--> to Sigmoid node, weight -0.19709438315497899
+--> to Sigmoid node, weight -0.19581499010773998
+--> to Sigmoid node, weight -0.20043667853312014
+--> to Sigmoid node, weight -0.19947537293736417
+--> to Sigmoid node, weight -0.19980856534717772
+--> to Sigmoid node, weight -0.19948595348016318
+--> to Sigmoid node, weight -0.1951596555937195
+Node: Input Node
+Value: 0.0
+Edges:
+--> to Sigmoid node, weight 0.1190699237832512
+--> to Sigmoid node, weight 0.11328673242147412
+--> to Sigmoid node, weight 0.11099855375700032
+--> to Sigmoid node, weight 0.11680035693510073
+--> to Sigmoid node, weight 0.11959340379475165
+--> to Sigmoid node, weight 0.12073961842227551
+--> to Sigmoid node, weight 0.10982257428656089
+--> to Sigmoid node, weight 0.10732927979572661
+--> to Sigmoid node, weight 0.11663718027641116
+--> to Sigmoid node, weight 0.12231333571340788
+--> to Sigmoid node, weight 0.12404487954926405
+--> to Sigmoid node, weight 0.10420116295695975
+--> to Sigmoid node, weight 0.12279648390520226
+--> to Sigmoid node, weight 0.12172312043139849
+--> to Sigmoid node, weight 0.11485884573939817
+--> to Sigmoid node, weight 0.11534341550687122
+--> to Sigmoid node, weight 0.1145723378072385
+--> to Sigmoid node, weight 0.11681358771471989
+--> to Sigmoid node, weight 0.10764452180575104
+--> to Sigmoid node, weight 0.11492425211412331
+--> to Sigmoid node, weight 0.11508046409407166
+--> to Sigmoid node, weight 0.11975063401586178
+--> to Sigmoid node, weight 0.11141228549040251
+--> to Sigmoid node, weight 0.10530014979006741
+--> to Sigmoid node, weight 0.1120667416090192
+--> to Sigmoid node, weight 0.11117851693736037
+--> to Sigmoid node, weight 0.1299656305935149
+--> to Sigmoid node, weight 0.10744393962659539
+--> to Sigmoid node, weight 0.1275634675818251
+--> to Sigmoid node, weight 0.10718993427823273
+--> to Sigmoid node, weight 0.10967259214073642
+--> to Sigmoid node, weight 0.1229930644888187
+--> to Sigmoid node, weight 0.11693534262603524
+--> to Sigmoid node, weight 0.11975567688093909
+--> to Sigmoid node, weight 0.12269880770261637
+--> to Sigmoid node, weight 0.11425672589118539
+Printing neural net statistics for layer 1
+Node: Sigmoid node
+Value: 0.4402273747521247
+Edges:
+--> to Sigmoid node, weight -1.8048541129431155
+--> to Sigmoid node, weight -1.8041236616649907
+--> to Sigmoid node, weight -2.085582606492621
+--> to Sigmoid node, weight -1.7144103384504426
+--> to Sigmoid node, weight -1.9278827024424239
+--> to Sigmoid node, weight -1.825431824754215
+--> to Sigmoid node, weight -1.8177467386309234
+--> to Sigmoid node, weight -1.829058031075892
+--> to Sigmoid node, weight -1.8413366009013143
+--> to Sigmoid node, weight -1.8106040864215485
+--> to Sigmoid node, weight -1.8019558213808007
+--> to Sigmoid node, weight -1.7987694155149847
+--> to Sigmoid node, weight -2.325967854302696
+--> to Sigmoid node, weight -1.9066567618113168
+--> to Sigmoid node, weight -2.1215449215187476
+--> to Sigmoid node, weight -1.8123552658731623
+--> to Sigmoid node, weight -2.010239143356867
+--> to Sigmoid node, weight -1.8023826150766662
+--> to Sigmoid node, weight -1.8366402310036283
+--> to Sigmoid node, weight -1.8272729554934646
+--> to Sigmoid node, weight -1.9880041417047662
+--> to Sigmoid node, weight -1.7990932751377615
+--> to Sigmoid node, weight -1.8208780373870812
+--> to Sigmoid node, weight -1.8080775637619886
+Node: Sigmoid node
+Value: 0.43639430797691897
+Edges:
+--> to Sigmoid node, weight -1.7650696334581406
+--> to Sigmoid node, weight -1.7662105970263153
+--> to Sigmoid node, weight -2.04193324821048
+--> to Sigmoid node, weight -1.6770773826719874
+--> to Sigmoid node, weight -1.892792103096102
+--> to Sigmoid node, weight -1.7879302944420947
+--> to Sigmoid node, weight -1.7786311105494246
+--> to Sigmoid node, weight -1.7961386382370617
+--> to Sigmoid node, weight -1.805677021860306
+--> to Sigmoid node, weight -1.7681562467297196
+--> to Sigmoid node, weight -1.7605660349619736
+--> to Sigmoid node, weight -1.7613485134329132
+--> to Sigmoid node, weight -2.2728280572403254
+--> to Sigmoid node, weight -1.8603732858953412
+--> to Sigmoid node, weight -2.079034243549051
+--> to Sigmoid node, weight -1.7732018996721128
+--> to Sigmoid node, weight -1.9685804090826993
+--> to Sigmoid node, weight -1.7680041662620283
+--> to Sigmoid node, weight -1.8026874945184244
+--> to Sigmoid node, weight -1.7894065423999155
+--> to Sigmoid node, weight -1.9509784540733188
+--> to Sigmoid node, weight -1.7621511862450376
+--> to Sigmoid node, weight -1.778799432521503
+--> to Sigmoid node, weight -1.7755397223141798
+Node: Sigmoid node
+Value: 0.43539016069650843
+Edges:
+--> to Sigmoid node, weight -1.7782446994024534
+--> to Sigmoid node, weight -1.773589923726888
+--> to Sigmoid node, weight -2.0587122187240876
+--> to Sigmoid node, weight -1.6945653464088752
+--> to Sigmoid node, weight -1.9079614958125344
+--> to Sigmoid node, weight -1.8001336850001586
+--> to Sigmoid node, weight -1.7886926331819892
+--> to Sigmoid node, weight -1.8042524662156572
+--> to Sigmoid node, weight -1.8182846539242616
+--> to Sigmoid node, weight -1.7826571608880093
+--> to Sigmoid node, weight -1.7781628313826559
+--> to Sigmoid node, weight -1.7702724950002466
+--> to Sigmoid node, weight -2.2912891671097744
+--> to Sigmoid node, weight -1.8745207663254622
+--> to Sigmoid node, weight -2.088008086265189
+--> to Sigmoid node, weight -1.7906368373808434
+--> to Sigmoid node, weight -1.9891774405475044
+--> to Sigmoid node, weight -1.782179852588581
+--> to Sigmoid node, weight -1.8117568006633284
+--> to Sigmoid node, weight -1.8015889645905216
+--> to Sigmoid node, weight -1.9632701725215393
+--> to Sigmoid node, weight -1.7754017626030978
+--> to Sigmoid node, weight -1.7901101872054919
+--> to Sigmoid node, weight -1.7877528519093178
+Node: Sigmoid node
+Value: 0.43943645187043456
+Edges:
+--> to Sigmoid node, weight -1.7994584800836342
+--> to Sigmoid node, weight -1.7950779567720898
+--> to Sigmoid node, weight -2.079562950166374
+--> to Sigmoid node, weight -1.7156870062624245
+--> to Sigmoid node, weight -1.9324285261332579
+--> to Sigmoid node, weight -1.8291850023732494
+--> to Sigmoid node, weight -1.8128998122295472
+--> to Sigmoid node, weight -1.8318557551000112
+--> to Sigmoid node, weight -1.8445362962280687
+--> to Sigmoid node, weight -1.798860759217998
+--> to Sigmoid node, weight -1.8035449159949792
+--> to Sigmoid node, weight -1.797238348692264
+--> to Sigmoid node, weight -2.3222082897280187
+--> to Sigmoid node, weight -1.9029510214428103
+--> to Sigmoid node, weight -2.116315958580801
+--> to Sigmoid node, weight -1.807945060416316
+--> to Sigmoid node, weight -2.0098736597019706
+--> to Sigmoid node, weight -1.802056639219142
+--> to Sigmoid node, weight -1.8387521202732404
+--> to Sigmoid node, weight -1.8337913883705679
+--> to Sigmoid node, weight -1.98843269523868
+--> to Sigmoid node, weight -1.791874535681822
+--> to Sigmoid node, weight -1.8134996321515853
+--> to Sigmoid node, weight -1.8101254686484993
+Node: Sigmoid node
+Value: 0.4400888502456587
+Edges:
+--> to Sigmoid node, weight -1.8151787139535303
+--> to Sigmoid node, weight -1.8043759540101616
+--> to Sigmoid node, weight -2.0917354550524143
+--> to Sigmoid node, weight -1.7229276654490748
+--> to Sigmoid node, weight -1.937298133562591
+--> to Sigmoid node, weight -1.8336281442757647
+--> to Sigmoid node, weight -1.8184315760533005
+--> to Sigmoid node, weight -1.8408708830746157
+--> to Sigmoid node, weight -1.8501943477148284
+--> to Sigmoid node, weight -1.8132070111193486
+--> to Sigmoid node, weight -1.8048514897445709
+--> to Sigmoid node, weight -1.8093208746054532
+--> to Sigmoid node, weight -2.334559464877548
+--> to Sigmoid node, weight -1.9106829965675336
+--> to Sigmoid node, weight -2.1248418909539866
+--> to Sigmoid node, weight -1.820584728030997
+--> to Sigmoid node, weight -2.017476756629226
+--> to Sigmoid node, weight -1.8070127587793332
+--> to Sigmoid node, weight -1.8477188038815988
+--> to Sigmoid node, weight -1.8381380213088476
+--> to Sigmoid node, weight -2.0001104015972797
+--> to Sigmoid node, weight -1.799384077718589
+--> to Sigmoid node, weight -1.8182296864821204
+--> to Sigmoid node, weight -1.8213178850432097
+Node: Sigmoid node
+Value: 0.4391031824227263
+Edges:
+--> to Sigmoid node, weight -1.8237218291639636
+--> to Sigmoid node, weight -1.8135367521659975
+--> to Sigmoid node, weight -2.105110279851479
+--> to Sigmoid node, weight -1.7377266697898215
+--> to Sigmoid node, weight -1.9442837744369403
+--> to Sigmoid node, weight -1.8449017526777531
+--> to Sigmoid node, weight -1.8291098831952735
+--> to Sigmoid node, weight -1.8478684271623746
+--> to Sigmoid node, weight -1.8608536858448603
+--> to Sigmoid node, weight -1.8260714184156628
+--> to Sigmoid node, weight -1.8193532846195093
+--> to Sigmoid node, weight -1.814607231659459
+--> to Sigmoid node, weight -2.346903064161311
+--> to Sigmoid node, weight -1.9215141341536048
+--> to Sigmoid node, weight -2.1432652227749545
+--> to Sigmoid node, weight -1.8346568217959642
+--> to Sigmoid node, weight -2.0338579217715798
+--> to Sigmoid node, weight -1.8160030590857419
+--> to Sigmoid node, weight -1.8572552039960906
+--> to Sigmoid node, weight -1.843920786397064
+--> to Sigmoid node, weight -2.006798381825827
+--> to Sigmoid node, weight -1.8192040870650734
+--> to Sigmoid node, weight -1.8288336664174965
+--> to Sigmoid node, weight -1.8259501264168148
+Node: Sigmoid node
+Value: 0.43704951931685543
+Edges:
+--> to Sigmoid node, weight -1.7833787041621683
+--> to Sigmoid node, weight -1.7781302375735368
+--> to Sigmoid node, weight -2.0576399000171355
+--> to Sigmoid node, weight -1.6899370560086338
+--> to Sigmoid node, weight -1.9057629585838645
+--> to Sigmoid node, weight -1.8038526641202937
+--> to Sigmoid node, weight -1.7950836135386417
+--> to Sigmoid node, weight -1.8150734230662
+--> to Sigmoid node, weight -1.8280429492160617
+--> to Sigmoid node, weight -1.7855169842607574
+--> to Sigmoid node, weight -1.7831527110782057
+--> to Sigmoid node, weight -1.7783628180686721
+--> to Sigmoid node, weight -2.295248557808333
+--> to Sigmoid node, weight -1.8796619272889656
+--> to Sigmoid node, weight -2.0989829020534394
+--> to Sigmoid node, weight -1.7930324405918694
+--> to Sigmoid node, weight -1.9857671074824805
+--> to Sigmoid node, weight -1.7794741514660137
+--> to Sigmoid node, weight -1.818563149120755
+--> to Sigmoid node, weight -1.8145736980805538
+--> to Sigmoid node, weight -1.9662835681312112
+--> to Sigmoid node, weight -1.7712615887693306
+--> to Sigmoid node, weight -1.7993163694785022
+--> to Sigmoid node, weight -1.7880486776487752
+Node: Sigmoid node
+Value: 0.43497354711850805
+Edges:
+--> to Sigmoid node, weight -1.7503579668931128
+--> to Sigmoid node, weight -1.7543855020702772
+--> to Sigmoid node, weight -2.029074428340563
+--> to Sigmoid node, weight -1.6658676207683445
+--> to Sigmoid node, weight -1.8777588333321458
+--> to Sigmoid node, weight -1.7789145076778814
+--> to Sigmoid node, weight -1.7710413073001803
+--> to Sigmoid node, weight -1.7861787552411512
+--> to Sigmoid node, weight -1.7920043405433375
+--> to Sigmoid node, weight -1.7598969571596659
+--> to Sigmoid node, weight -1.7533933868653429
+--> to Sigmoid node, weight -1.750889781012812
+--> to Sigmoid node, weight -2.2594975886898
+--> to Sigmoid node, weight -1.845313756356453
+--> to Sigmoid node, weight -2.062206831841119
+--> to Sigmoid node, weight -1.7664041668288468
+--> to Sigmoid node, weight -1.9578370528503066
+--> to Sigmoid node, weight -1.7497614802125465
+--> to Sigmoid node, weight -1.7910315199322098
+--> to Sigmoid node, weight -1.7797054556337377
+--> to Sigmoid node, weight -1.937129144759242
+--> to Sigmoid node, weight -1.7483442946270795
+--> to Sigmoid node, weight -1.7653002698978666
+--> to Sigmoid node, weight -1.7615891044944718
+Node: Sigmoid node
+Value: 0.43976232191810694
+Edges:
+--> to Sigmoid node, weight -1.7953017705226197
+--> to Sigmoid node, weight -1.7938581396890485
+--> to Sigmoid node, weight -2.076821839681834
+--> to Sigmoid node, weight -1.7078764600935292
+--> to Sigmoid node, weight -1.9199753554932324
+--> to Sigmoid node, weight -1.8185288079867972
+--> to Sigmoid node, weight -1.8137149464052724
+--> to Sigmoid node, weight -1.828655885123293
+--> to Sigmoid node, weight -1.8338108790285095
+--> to Sigmoid node, weight -1.7971041100489482
+--> to Sigmoid node, weight -1.7954795156804868
+--> to Sigmoid node, weight -1.7893472357590952
+--> to Sigmoid node, weight -2.311939193976334
+--> to Sigmoid node, weight -1.8975282724537161
+--> to Sigmoid node, weight -2.114169876125795
+--> to Sigmoid node, weight -1.8103723043485866
+--> to Sigmoid node, weight -2.005563262042575
+--> to Sigmoid node, weight -1.7961306050382755
+--> to Sigmoid node, weight -1.8340199303073226
+--> to Sigmoid node, weight -1.8231090907659921
+--> to Sigmoid node, weight -1.9803167399963608
+--> to Sigmoid node, weight -1.7877351276900975
+--> to Sigmoid node, weight -1.8096084190411177
+--> to Sigmoid node, weight -1.7996827152530184
+Node: Sigmoid node
+Value: 0.4435901716950933
+Edges:
+--> to Sigmoid node, weight -1.8155076561045138
+--> to Sigmoid node, weight -1.8140718911113947
+--> to Sigmoid node, weight -2.099987493364936
+--> to Sigmoid node, weight -1.722386870519054
+--> to Sigmoid node, weight -1.9483646822150977
+--> to Sigmoid node, weight -1.8431198368294541
+--> to Sigmoid node, weight -1.823199548030053
+--> to Sigmoid node, weight -1.843912953157452
+--> to Sigmoid node, weight -1.8602655313149576
+--> to Sigmoid node, weight -1.8137237466940304
+--> to Sigmoid node, weight -1.8165083210082575
+--> to Sigmoid node, weight -1.8072516244756769
+--> to Sigmoid node, weight -2.336345155116483
+--> to Sigmoid node, weight -1.9140526075243247
+--> to Sigmoid node, weight -2.1389850570234894
+--> to Sigmoid node, weight -1.8282262275710954
+--> to Sigmoid node, weight -2.024389196121021
+--> to Sigmoid node, weight -1.818201409391326
+--> to Sigmoid node, weight -1.854651440749999
+--> to Sigmoid node, weight -1.8470371345374106
+--> to Sigmoid node, weight -2.000382976297864
+--> to Sigmoid node, weight -1.8098340145348195
+--> to Sigmoid node, weight -1.831040760723188
+--> to Sigmoid node, weight -1.8241714589765237
+Node: Sigmoid node
+Value: 0.44420920201904285
+Edges:
+--> to Sigmoid node, weight -1.8510257467123814
+--> to Sigmoid node, weight -1.8472674222813918
+--> to Sigmoid node, weight -2.135591370670769
+--> to Sigmoid node, weight -1.7600433211849522
+--> to Sigmoid node, weight -1.9777667409186055
+--> to Sigmoid node, weight -1.8692460602691945
+--> to Sigmoid node, weight -1.855347376921683
+--> to Sigmoid node, weight -1.878271221929772
+--> to Sigmoid node, weight -1.8915063942722872
+--> to Sigmoid node, weight -1.8481582438473259
+--> to Sigmoid node, weight -1.8479364047247941
+--> to Sigmoid node, weight -1.8400082829182216
+--> to Sigmoid node, weight -2.3785141197570643
+--> to Sigmoid node, weight -1.9425661058096946
+--> to Sigmoid node, weight -2.175381569310971
+--> to Sigmoid node, weight -1.85897734936765
+--> to Sigmoid node, weight -2.064401589939898
+--> to Sigmoid node, weight -1.8477083261203164
+--> to Sigmoid node, weight -1.8851820765166087
+--> to Sigmoid node, weight -1.873469794977785
+--> to Sigmoid node, weight -2.042165316288867
+--> to Sigmoid node, weight -1.8376841928081347
+--> to Sigmoid node, weight -1.8585575822597926
+--> to Sigmoid node, weight -1.8585138595977275
+Node: Sigmoid node
+Value: 0.4349833979855118
+Edges:
+--> to Sigmoid node, weight -1.7365771718997614
+--> to Sigmoid node, weight -1.7325076752904702
+--> to Sigmoid node, weight -1.9999524776260327
+--> to Sigmoid node, weight -1.6386068764372697
+--> to Sigmoid node, weight -1.8557365564425965
+--> to Sigmoid node, weight -1.7553152912713557
+--> to Sigmoid node, weight -1.7451280489253342
+--> to Sigmoid node, weight -1.7619484808758017
+--> to Sigmoid node, weight -1.776377869058568
+--> to Sigmoid node, weight -1.73562680748099
+--> to Sigmoid node, weight -1.7292845552278442
+--> to Sigmoid node, weight -1.7251668383578092
+--> to Sigmoid node, weight -2.2319211709742013
+--> to Sigmoid node, weight -1.8324123342649992
+--> to Sigmoid node, weight -2.0335039545532325
+--> to Sigmoid node, weight -1.7412208081464644
+--> to Sigmoid node, weight -1.9284533478320154
+--> to Sigmoid node, weight -1.732389763962642
+--> to Sigmoid node, weight -1.7726046222376397
+--> to Sigmoid node, weight -1.7592692979377977
+--> to Sigmoid node, weight -1.9146059701196365
+--> to Sigmoid node, weight -1.720698875894806
+--> to Sigmoid node, weight -1.7456145976509436
+--> to Sigmoid node, weight -1.7436950678000096
+Node: Sigmoid node
+Value: 0.439923581264289
+Edges:
+--> to Sigmoid node, weight -1.833419154014142
+--> to Sigmoid node, weight -1.8263204305897358
+--> to Sigmoid node, weight -2.1146094815524137
+--> to Sigmoid node, weight -1.7405120246829293
+--> to Sigmoid node, weight -1.9601794539539312
+--> to Sigmoid node, weight -1.852883462020918
+--> to Sigmoid node, weight -1.839838144758056
+--> to Sigmoid node, weight -1.8574198890398148
+--> to Sigmoid node, weight -1.866531581987529
+--> to Sigmoid node, weight -1.8234234732605454
+--> to Sigmoid node, weight -1.8252283766580644
+--> to Sigmoid node, weight -1.8215311920339337
+--> to Sigmoid node, weight -2.353125118316917
+--> to Sigmoid node, weight -1.926016546858743
+--> to Sigmoid node, weight -2.1465788934354038
+--> to Sigmoid node, weight -1.8388386527467653
+--> to Sigmoid node, weight -2.041741515001078
+--> to Sigmoid node, weight -1.822118263471939
+--> to Sigmoid node, weight -1.8645036208603518
+--> to Sigmoid node, weight -1.8542313455892816
+--> to Sigmoid node, weight -2.0188921000744173
+--> to Sigmoid node, weight -1.8242996008480599
+--> to Sigmoid node, weight -1.838800787287231
+--> to Sigmoid node, weight -1.8307618098597123
+Node: Sigmoid node
+Value: 0.4390223512961629
+Edges:
+--> to Sigmoid node, weight -1.8069534209185587
+--> to Sigmoid node, weight -1.7953355233471866
+--> to Sigmoid node, weight -2.0857719161027357
+--> to Sigmoid node, weight -1.713334425791217
+--> to Sigmoid node, weight -1.9253044073660008
+--> to Sigmoid node, weight -1.8283573573854022
+--> to Sigmoid node, weight -1.8146404213836127
+--> to Sigmoid node, weight -1.8264174056972171
+--> to Sigmoid node, weight -1.8442052710633285
+--> to Sigmoid node, weight -1.801038758094474
+--> to Sigmoid node, weight -1.7990275360591816
+--> to Sigmoid node, weight -1.8016067285229522
+--> to Sigmoid node, weight -2.3191636218249854
+--> to Sigmoid node, weight -1.8946276456361724
+--> to Sigmoid node, weight -2.114370362274951
+--> to Sigmoid node, weight -1.8089226662399214
+--> to Sigmoid node, weight -2.0130826932738954
+--> to Sigmoid node, weight -1.797839150122515
+--> to Sigmoid node, weight -1.8389181706397437
+--> to Sigmoid node, weight -1.8237854970013694
+--> to Sigmoid node, weight -1.9924667763832344
+--> to Sigmoid node, weight -1.7908921412249177
+--> to Sigmoid node, weight -1.8178794902864042
+--> to Sigmoid node, weight -1.807050574211906
+Node: Sigmoid node
+Value: 0.43835689082651613
+Edges:
+--> to Sigmoid node, weight -1.7894173282972612
+--> to Sigmoid node, weight -1.79076300436696
+--> to Sigmoid node, weight -2.069415180386426
+--> to Sigmoid node, weight -1.6975838361460083
+--> to Sigmoid node, weight -1.9175211703499975
+--> to Sigmoid node, weight -1.813010681790716
+--> to Sigmoid node, weight -1.806433053140651
+--> to Sigmoid node, weight -1.82296108210143
+--> to Sigmoid node, weight -1.8344210426606105
+--> to Sigmoid node, weight -1.7936541638396661
+--> to Sigmoid node, weight -1.7861985353248035
+--> to Sigmoid node, weight -1.7891469320482492
+--> to Sigmoid node, weight -2.30671642758252
+--> to Sigmoid node, weight -1.8904904600952008
+--> to Sigmoid node, weight -2.1030876739388003
+--> to Sigmoid node, weight -1.8044984873109358
+--> to Sigmoid node, weight -1.9998820292183574
+--> to Sigmoid node, weight -1.7897871583838574
+--> to Sigmoid node, weight -1.821273507386064
+--> to Sigmoid node, weight -1.8149123527871203
+--> to Sigmoid node, weight -1.9699925019251612
+--> to Sigmoid node, weight -1.778594435537505
+--> to Sigmoid node, weight -1.7987120191751622
+--> to Sigmoid node, weight -1.8015259046764565
+Node: Sigmoid node
+Value: 0.44038646063787845
+Edges:
+--> to Sigmoid node, weight -1.8075266639465377
+--> to Sigmoid node, weight -1.7989879545517817
+--> to Sigmoid node, weight -2.085608838752282
+--> to Sigmoid node, weight -1.7132142921152176
+--> to Sigmoid node, weight -1.9292872172412727
+--> to Sigmoid node, weight -1.8237632893607778
+--> to Sigmoid node, weight -1.8181813382023648
+--> to Sigmoid node, weight -1.8287787854582438
+--> to Sigmoid node, weight -1.8481844954443865
+--> to Sigmoid node, weight -1.8041963571526682
+--> to Sigmoid node, weight -1.8008623045895076
+--> to Sigmoid node, weight -1.8003802728135292
+--> to Sigmoid node, weight -2.32262807242054
+--> to Sigmoid node, weight -1.898775389523485
+--> to Sigmoid node, weight -2.1212646077411965
+--> to Sigmoid node, weight -1.8153251031529025
+--> to Sigmoid node, weight -2.0110811363839236
+--> to Sigmoid node, weight -1.7991696903901575
+--> to Sigmoid node, weight -1.835126510705972
+--> to Sigmoid node, weight -1.8287087025617075
+--> to Sigmoid node, weight -1.9899075942439741
+--> to Sigmoid node, weight -1.7966434652425813
+--> to Sigmoid node, weight -1.815846956200833
+--> to Sigmoid node, weight -1.8123991178395278
+Node: Sigmoid node
+Value: 0.4395096689721505
+Edges:
+--> to Sigmoid node, weight -1.8107238701961328
+--> to Sigmoid node, weight -1.8025164502056383
+--> to Sigmoid node, weight -2.0934366823609136
+--> to Sigmoid node, weight -1.7206317228452075
+--> to Sigmoid node, weight -1.9392153732842698
+--> to Sigmoid node, weight -1.832290164169742
+--> to Sigmoid node, weight -1.8247611796172287
+--> to Sigmoid node, weight -1.8369635338658166
+--> to Sigmoid node, weight -1.8465294459664974
+--> to Sigmoid node, weight -1.806929716846217
+--> to Sigmoid node, weight -1.8055727409929532
+--> to Sigmoid node, weight -1.809905516458426
+--> to Sigmoid node, weight -2.3291283571406076
+--> to Sigmoid node, weight -1.9063041268412932
+--> to Sigmoid node, weight -2.1254322559625516
+--> to Sigmoid node, weight -1.8199503715678371
+--> to Sigmoid node, weight -2.0185701601792143
+--> to Sigmoid node, weight -1.8117517637171712
+--> to Sigmoid node, weight -1.8421340356629874
+--> to Sigmoid node, weight -1.8392984181451322
+--> to Sigmoid node, weight -1.9994054643346515
+--> to Sigmoid node, weight -1.7977274219643133
+--> to Sigmoid node, weight -1.8206810614505167
+--> to Sigmoid node, weight -1.8181183246622774
+Node: Sigmoid node
+Value: 0.43697353664681554
+Edges:
+--> to Sigmoid node, weight -1.7842171308084596
+--> to Sigmoid node, weight -1.7747184344117233
+--> to Sigmoid node, weight -2.057966017625262
+--> to Sigmoid node, weight -1.6905485291983546
+--> to Sigmoid node, weight -1.900284097521074
+--> to Sigmoid node, weight -1.7997331389485687
+--> to Sigmoid node, weight -1.791001889384977
+--> to Sigmoid node, weight -1.8044711668651006
+--> to Sigmoid node, weight -1.8204829325287235
+--> to Sigmoid node, weight -1.7782406946466645
+--> to Sigmoid node, weight -1.7779558449804447
+--> to Sigmoid node, weight -1.7792563556875023
+--> to Sigmoid node, weight -2.2919452427543154
+--> to Sigmoid node, weight -1.8747350503015614
+--> to Sigmoid node, weight -2.0941873811510736
+--> to Sigmoid node, weight -1.7850706008699204
+--> to Sigmoid node, weight -1.9819060591696662
+--> to Sigmoid node, weight -1.7782776203885386
+--> to Sigmoid node, weight -1.8168686008087898
+--> to Sigmoid node, weight -1.809342818577944
+--> to Sigmoid node, weight -1.9658051150039602
+--> to Sigmoid node, weight -1.7694952589581991
+--> to Sigmoid node, weight -1.791543993802371
+--> to Sigmoid node, weight -1.7906769096645205
+Node: Sigmoid node
+Value: 0.4337011178976949
+Edges:
+--> to Sigmoid node, weight -1.751539925954834
+--> to Sigmoid node, weight -1.7572492854552078
+--> to Sigmoid node, weight -2.0303970876191757
+--> to Sigmoid node, weight -1.6708205140258
+--> to Sigmoid node, weight -1.8841121991286398
+--> to Sigmoid node, weight -1.7793054956750307
+--> to Sigmoid node, weight -1.7699797260892047
+--> to Sigmoid node, weight -1.7862346174933623
+--> to Sigmoid node, weight -1.7954469141384162
+--> to Sigmoid node, weight -1.7615089509495758
+--> to Sigmoid node, weight -1.7516187815251891
+--> to Sigmoid node, weight -1.7509990930830743
+--> to Sigmoid node, weight -2.2663465734789745
+--> to Sigmoid node, weight -1.8523535057140559
+--> to Sigmoid node, weight -2.0615136369818434
+--> to Sigmoid node, weight -1.770138320496189
+--> to Sigmoid node, weight -1.9575945837978914
+--> to Sigmoid node, weight -1.7593579163385245
+--> to Sigmoid node, weight -1.7880621876643181
+--> to Sigmoid node, weight -1.7842551481015043
+--> to Sigmoid node, weight -1.9400148883847539
+--> to Sigmoid node, weight -1.7514261573745797
+--> to Sigmoid node, weight -1.7680008088401684
+--> to Sigmoid node, weight -1.7655482105431235
+Node: Sigmoid node
+Value: 0.4351509255530687
+Edges:
+--> to Sigmoid node, weight -1.7710054199622918
+--> to Sigmoid node, weight -1.7634003775268086
+--> to Sigmoid node, weight -2.045941811917118
+--> to Sigmoid node, weight -1.6857369191291065
+--> to Sigmoid node, weight -1.8970056131148514
+--> to Sigmoid node, weight -1.7938738446497524
+--> to Sigmoid node, weight -1.7786084864480032
+--> to Sigmoid node, weight -1.8041418796486197
+--> to Sigmoid node, weight -1.8132200838626638
+--> to Sigmoid node, weight -1.7682352591577206
+--> to Sigmoid node, weight -1.7658945183723713
+--> to Sigmoid node, weight -1.7620232730146597
+--> to Sigmoid node, weight -2.2751240233567067
+--> to Sigmoid node, weight -1.871576732271752
+--> to Sigmoid node, weight -2.0788433109858846
+--> to Sigmoid node, weight -1.7790788202881356
+--> to Sigmoid node, weight -1.977017071018783
+--> to Sigmoid node, weight -1.7665506822589914
+--> to Sigmoid node, weight -1.80721909744262
+--> to Sigmoid node, weight -1.796937875858658
+--> to Sigmoid node, weight -1.9555913752989988
+--> to Sigmoid node, weight -1.7617042778384244
+--> to Sigmoid node, weight -1.7819207929785466
+--> to Sigmoid node, weight -1.7763827182146987
+Node: Sigmoid node
+Value: 0.43705332611359604
+Edges:
+--> to Sigmoid node, weight -1.7733631560613345
+--> to Sigmoid node, weight -1.7681395955766726
+--> to Sigmoid node, weight -2.0425797036250755
+--> to Sigmoid node, weight -1.6746279536106405
+--> to Sigmoid node, weight -1.8941473790709127
+--> to Sigmoid node, weight -1.7940766226894436
+--> to Sigmoid node, weight -1.7820437905798985
+--> to Sigmoid node, weight -1.796160970174836
+--> to Sigmoid node, weight -1.8121912878916453
+--> to Sigmoid node, weight -1.7708531186650436
+--> to Sigmoid node, weight -1.764959810516745
+--> to Sigmoid node, weight -1.7622945486818062
+--> to Sigmoid node, weight -2.275399990593461
+--> to Sigmoid node, weight -1.8625253713104712
+--> to Sigmoid node, weight -2.0820767985856214
+--> to Sigmoid node, weight -1.7820749788437562
+--> to Sigmoid node, weight -1.9694413422270542
+--> to Sigmoid node, weight -1.7636855275263141
+--> to Sigmoid node, weight -1.8091176595194702
+--> to Sigmoid node, weight -1.797041973848997
+--> to Sigmoid node, weight -1.952700600984154
+--> to Sigmoid node, weight -1.7556678252496012
+--> to Sigmoid node, weight -1.7815016775200008
+--> to Sigmoid node, weight -1.7776320502303453
+Node: Sigmoid node
+Value: 0.438310649911879
+Edges:
+--> to Sigmoid node, weight -1.7963243999576133
+--> to Sigmoid node, weight -1.7896985951663025
+--> to Sigmoid node, weight -2.0798545352010205
+--> to Sigmoid node, weight -1.704803130274774
+--> to Sigmoid node, weight -1.919006089293778
+--> to Sigmoid node, weight -1.8178920383591635
+--> to Sigmoid node, weight -1.8056501515611374
+--> to Sigmoid node, weight -1.8239631360844866
+--> to Sigmoid node, weight -1.8369743017808866
+--> to Sigmoid node, weight -1.8002890625716343
+--> to Sigmoid node, weight -1.7929969963352284
+--> to Sigmoid node, weight -1.7891530638733255
+--> to Sigmoid node, weight -2.315017440104572
+--> to Sigmoid node, weight -1.893323801757274
+--> to Sigmoid node, weight -2.107487545857998
+--> to Sigmoid node, weight -1.8005938122735468
+--> to Sigmoid node, weight -1.9991781293657993
+--> to Sigmoid node, weight -1.7942900321532187
+--> to Sigmoid node, weight -1.8316363869845649
+--> to Sigmoid node, weight -1.8212728556364
+--> to Sigmoid node, weight -1.9787706425996168
+--> to Sigmoid node, weight -1.7911473325042753
+--> to Sigmoid node, weight -1.812363602699334
+--> to Sigmoid node, weight -1.8059068755285057
+Node: Sigmoid node
+Value: 0.4381923935663651
+Edges:
+--> to Sigmoid node, weight -1.7879632449071146
+--> to Sigmoid node, weight -1.788293811162335
+--> to Sigmoid node, weight -2.068869630965407
+--> to Sigmoid node, weight -1.6987911108765987
+--> to Sigmoid node, weight -1.915872766999347
+--> to Sigmoid node, weight -1.816413290403227
+--> to Sigmoid node, weight -1.7989452384208195
+--> to Sigmoid node, weight -1.8215943445449667
+--> to Sigmoid node, weight -1.830027844931137
+--> to Sigmoid node, weight -1.7933689808275353
+--> to Sigmoid node, weight -1.7886377956936816
+--> to Sigmoid node, weight -1.7870269894165867
+--> to Sigmoid node, weight -2.3021845304811217
+--> to Sigmoid node, weight -1.885729472170849
+--> to Sigmoid node, weight -2.1093373003984093
+--> to Sigmoid node, weight -1.800941844910289
+--> to Sigmoid node, weight -1.9936515357045446
+--> to Sigmoid node, weight -1.784554748253992
+--> to Sigmoid node, weight -1.823677990460697
+--> to Sigmoid node, weight -1.817331799934912
+--> to Sigmoid node, weight -1.9799949641283714
+--> to Sigmoid node, weight -1.784645751492359
+--> to Sigmoid node, weight -1.8046989466016943
+--> to Sigmoid node, weight -1.7994011251861133
+Node: Sigmoid node
+Value: 0.43485753787096326
+Edges:
+--> to Sigmoid node, weight -1.7459086856188049
+--> to Sigmoid node, weight -1.7488895199864682
+--> to Sigmoid node, weight -2.027078418427337
+--> to Sigmoid node, weight -1.6562363016617712
+--> to Sigmoid node, weight -1.8768774656771712
+--> to Sigmoid node, weight -1.77447583473445
+--> to Sigmoid node, weight -1.7658523626574343
+--> to Sigmoid node, weight -1.7823447178833507
+--> to Sigmoid node, weight -1.7886737266665702
+--> to Sigmoid node, weight -1.751441865078549
+--> to Sigmoid node, weight -1.7489353681252504
+--> to Sigmoid node, weight -1.7402278962780666
+--> to Sigmoid node, weight -2.2478730510873426
+--> to Sigmoid node, weight -1.8402747571514824
+--> to Sigmoid node, weight -2.051282460034357
+--> to Sigmoid node, weight -1.7555139958933674
+--> to Sigmoid node, weight -1.9486991783394894
+--> to Sigmoid node, weight -1.7466343604294903
+--> to Sigmoid node, weight -1.7892530722596247
+--> to Sigmoid node, weight -1.7761387404319247
+--> to Sigmoid node, weight -1.9333538408913695
+--> to Sigmoid node, weight -1.7369496420805766
+--> to Sigmoid node, weight -1.7661781110563197
+--> to Sigmoid node, weight -1.7569352489488987
+Node: Sigmoid node
+Value: 0.4418325855658116
+Edges:
+--> to Sigmoid node, weight -1.8097177523315136
+--> to Sigmoid node, weight -1.8079213046601683
+--> to Sigmoid node, weight -2.0917612936225005
+--> to Sigmoid node, weight -1.7201826100084734
+--> to Sigmoid node, weight -1.9311579429145211
+--> to Sigmoid node, weight -1.8264920527427724
+--> to Sigmoid node, weight -1.8193993624996687
+--> to Sigmoid node, weight -1.8334917843816547
+--> to Sigmoid node, weight -1.8493024878860598
+--> to Sigmoid node, weight -1.8088648272668975
+--> to Sigmoid node, weight -1.8009781212935294
+--> to Sigmoid node, weight -1.7986529670773161
+--> to Sigmoid node, weight -2.3285120190229462
+--> to Sigmoid node, weight -1.9033019414815926
+--> to Sigmoid node, weight -2.124655346085871
+--> to Sigmoid node, weight -1.8208430608745354
+--> to Sigmoid node, weight -2.0165747955651767
+--> to Sigmoid node, weight -1.8081988287055162
+--> to Sigmoid node, weight -1.8451168628841237
+--> to Sigmoid node, weight -1.8308853121441944
+--> to Sigmoid node, weight -1.9963543714833525
+--> to Sigmoid node, weight -1.7985440718756418
+--> to Sigmoid node, weight -1.8235707912644947
+--> to Sigmoid node, weight -1.8199409855321043
+Node: Sigmoid node
+Value: 0.43415003788233647
+Edges:
+--> to Sigmoid node, weight -1.7698108172453748
+--> to Sigmoid node, weight -1.7637700723575607
+--> to Sigmoid node, weight -2.0485458679577992
+--> to Sigmoid node, weight -1.686532005276579
+--> to Sigmoid node, weight -1.8904711029304027
+--> to Sigmoid node, weight -1.795179279197132
+--> to Sigmoid node, weight -1.7806246923133688
+--> to Sigmoid node, weight -1.8013961524867836
+--> to Sigmoid node, weight -1.8089097818179123
+--> to Sigmoid node, weight -1.773262852196015
+--> to Sigmoid node, weight -1.7708248995144826
+--> to Sigmoid node, weight -1.7619957295709383
+--> to Sigmoid node, weight -2.2754691044870192
+--> to Sigmoid node, weight -1.870082296680243
+--> to Sigmoid node, weight -2.084290216447945
+--> to Sigmoid node, weight -1.7759833153485012
+--> to Sigmoid node, weight -1.9730769761925826
+--> to Sigmoid node, weight -1.770812420857728
+--> to Sigmoid node, weight -1.8000936302286885
+--> to Sigmoid node, weight -1.79569149400113
+--> to Sigmoid node, weight -1.9577945021594196
+--> to Sigmoid node, weight -1.7652901889985084
+--> to Sigmoid node, weight -1.777821372089905
+--> to Sigmoid node, weight -1.7744095179845403
+Node: Sigmoid node
+Value: 0.44714140478211745
+Edges:
+--> to Sigmoid node, weight -1.885177711923964
+--> to Sigmoid node, weight -1.8800331407110846
+--> to Sigmoid node, weight -2.175501593235802
+--> to Sigmoid node, weight -1.800167419721974
+--> to Sigmoid node, weight -2.0065907661244133
+--> to Sigmoid node, weight -1.9065615127305284
+--> to Sigmoid node, weight -1.8943443281430687
+--> to Sigmoid node, weight -1.9126877017119241
+--> to Sigmoid node, weight -1.9238515665038765
+--> to Sigmoid node, weight -1.8818150414053323
+--> to Sigmoid node, weight -1.872708580232449
+--> to Sigmoid node, weight -1.877544179609985
+--> to Sigmoid node, weight -2.4281507507117888
+--> to Sigmoid node, weight -1.9829843001933156
+--> to Sigmoid node, weight -2.2137879096309745
+--> to Sigmoid node, weight -1.8871572387757325
+--> to Sigmoid node, weight -2.0994442638155326
+--> to Sigmoid node, weight -1.8776167496698708
+--> to Sigmoid node, weight -1.916512310389229
+--> to Sigmoid node, weight -1.9058693745155704
+--> to Sigmoid node, weight -2.0736318916468126
+--> to Sigmoid node, weight -1.8746080942923988
+--> to Sigmoid node, weight -1.8902386932305588
+--> to Sigmoid node, weight -1.8917107846463703
+Node: Sigmoid node
+Value: 0.43829952720686977
+Edges:
+--> to Sigmoid node, weight -1.7597407581071096
+--> to Sigmoid node, weight -1.7612429339900033
+--> to Sigmoid node, weight -2.0378044832611035
+--> to Sigmoid node, weight -1.6692411912703329
+--> to Sigmoid node, weight -1.8916582101165014
+--> to Sigmoid node, weight -1.7887611770341483
+--> to Sigmoid node, weight -1.7788869659590631
+--> to Sigmoid node, weight -1.7931427641638165
+--> to Sigmoid node, weight -1.8039368499421091
+--> to Sigmoid node, weight -1.7595748468133194
+--> to Sigmoid node, weight -1.7622400794567108
+--> to Sigmoid node, weight -1.7617797082685496
+--> to Sigmoid node, weight -2.2646634223360063
+--> to Sigmoid node, weight -1.856486166042324
+--> to Sigmoid node, weight -2.0673658107558364
+--> to Sigmoid node, weight -1.7768982925836407
+--> to Sigmoid node, weight -1.9639277531603236
+--> to Sigmoid node, weight -1.7564038143981389
+--> to Sigmoid node, weight -1.795067457583185
+--> to Sigmoid node, weight -1.792639876216628
+--> to Sigmoid node, weight -1.9504693842164806
+--> to Sigmoid node, weight -1.7470765790936247
+--> to Sigmoid node, weight -1.7721567968035308
+--> to Sigmoid node, weight -1.7673501336312456
+Node: Sigmoid node
+Value: 0.4448293527525054
+Edges:
+--> to Sigmoid node, weight -1.866776206090993
+--> to Sigmoid node, weight -1.8535978890254245
+--> to Sigmoid node, weight -2.1495372511697823
+--> to Sigmoid node, weight -1.770991314212023
+--> to Sigmoid node, weight -1.9932193871998527
+--> to Sigmoid node, weight -1.8809502274511964
+--> to Sigmoid node, weight -1.8681506682118796
+--> to Sigmoid node, weight -1.8837131171304446
+--> to Sigmoid node, weight -1.8967118748983467
+--> to Sigmoid node, weight -1.863111066337537
+--> to Sigmoid node, weight -1.8559113927385364
+--> to Sigmoid node, weight -1.859983422463104
+--> to Sigmoid node, weight -2.3953087577068994
+--> to Sigmoid node, weight -1.9635753039683423
+--> to Sigmoid node, weight -2.1888380285502143
+--> to Sigmoid node, weight -1.8718070872325447
+--> to Sigmoid node, weight -2.074720092307983
+--> to Sigmoid node, weight -1.858625674279697
+--> to Sigmoid node, weight -1.8930815325260277
+--> to Sigmoid node, weight -1.8872629390360665
+--> to Sigmoid node, weight -2.0553302190821787
+--> to Sigmoid node, weight -1.8531340803948504
+--> to Sigmoid node, weight -1.8710622497100744
+--> to Sigmoid node, weight -1.8676510465597507
+Node: Sigmoid node
+Value: 0.43101274168652326
+Edges:
+--> to Sigmoid node, weight -1.7256570743264286
+--> to Sigmoid node, weight -1.7207413955326007
+--> to Sigmoid node, weight -1.9971416307915428
+--> to Sigmoid node, weight -1.638084813171889
+--> to Sigmoid node, weight -1.8487576378085333
+--> to Sigmoid node, weight -1.746643871831226
+--> to Sigmoid node, weight -1.7396399949389654
+--> to Sigmoid node, weight -1.7581105015534129
+--> to Sigmoid node, weight -1.7677596381884084
+--> to Sigmoid node, weight -1.7253843210933206
+--> to Sigmoid node, weight -1.723146408494953
+--> to Sigmoid node, weight -1.7261326190177615
+--> to Sigmoid node, weight -2.222911589426288
+--> to Sigmoid node, weight -1.8212851354931836
+--> to Sigmoid node, weight -2.0270353375179084
+--> to Sigmoid node, weight -1.740493324107089
+--> to Sigmoid node, weight -1.9233443847166247
+--> to Sigmoid node, weight -1.7259439790407165
+--> to Sigmoid node, weight -1.7615626621222746
+--> to Sigmoid node, weight -1.7535697935527912
+--> to Sigmoid node, weight -1.9030091856061038
+--> to Sigmoid node, weight -1.7147334339469478
+--> to Sigmoid node, weight -1.7418193494446061
+--> to Sigmoid node, weight -1.7311912943370722
+Node: Sigmoid node
+Value: 0.4344146805014565
+Edges:
+--> to Sigmoid node, weight -1.7438860724722967
+--> to Sigmoid node, weight -1.7461913519481231
+--> to Sigmoid node, weight -2.0167220681751763
+--> to Sigmoid node, weight -1.6553517389405665
+--> to Sigmoid node, weight -1.8676556937211963
+--> to Sigmoid node, weight -1.7695592296793188
+--> to Sigmoid node, weight -1.757513014399417
+--> to Sigmoid node, weight -1.7796331200597095
+--> to Sigmoid node, weight -1.78643309580499
+--> to Sigmoid node, weight -1.7530810086548334
+--> to Sigmoid node, weight -1.7408615746500733
+--> to Sigmoid node, weight -1.7443771531730927
+--> to Sigmoid node, weight -2.247727493142121
+--> to Sigmoid node, weight -1.8408948231248254
+--> to Sigmoid node, weight -2.0545807060442542
+--> to Sigmoid node, weight -1.7601760698393638
+--> to Sigmoid node, weight -1.948487680421585
+--> to Sigmoid node, weight -1.7411852103154437
+--> to Sigmoid node, weight -1.7796529515579014
+--> to Sigmoid node, weight -1.7763761237284552
+--> to Sigmoid node, weight -1.9282441694349146
+--> to Sigmoid node, weight -1.740206772954906
+--> to Sigmoid node, weight -1.757708666215458
+--> to Sigmoid node, weight -1.7530591193048817
+Node: Sigmoid node
+Value: 0.43947182063864704
+Edges:
+--> to Sigmoid node, weight -1.809809252844098
+--> to Sigmoid node, weight -1.8077771876445827
+--> to Sigmoid node, weight -2.0943756817236108
+--> to Sigmoid node, weight -1.7290841143053426
+--> to Sigmoid node, weight -1.9400912500926673
+--> to Sigmoid node, weight -1.8368563873910884
+--> to Sigmoid node, weight -1.8220309278798923
+--> to Sigmoid node, weight -1.8367054664079114
+--> to Sigmoid node, weight -1.8489446227059239
+--> to Sigmoid node, weight -1.8155457764911123
+--> to Sigmoid node, weight -1.8084091551578962
+--> to Sigmoid node, weight -1.8107708284434105
+--> to Sigmoid node, weight -2.3393537618179074
+--> to Sigmoid node, weight -1.912407542099369
+--> to Sigmoid node, weight -2.1299443199119623
+--> to Sigmoid node, weight -1.8199576622756775
+--> to Sigmoid node, weight -2.017877655162895
+--> to Sigmoid node, weight -1.8152693072439516
+--> to Sigmoid node, weight -1.8506650052119529
+--> to Sigmoid node, weight -1.8344149594610255
+--> to Sigmoid node, weight -1.998224587459238
+--> to Sigmoid node, weight -1.804852404736289
+--> to Sigmoid node, weight -1.8266289459330314
+--> to Sigmoid node, weight -1.8190484551906956
+Node: Sigmoid node
+Value: 0.4409069770789999
+Edges:
+--> to Sigmoid node, weight -1.8091959887627778
+--> to Sigmoid node, weight -1.813217431539111
+--> to Sigmoid node, weight -2.0950622003828396
+--> to Sigmoid node, weight -1.7237538251693933
+--> to Sigmoid node, weight -1.944284125314987
+--> to Sigmoid node, weight -1.8373147756289856
+--> to Sigmoid node, weight -1.8267982787232768
+--> to Sigmoid node, weight -1.8452991697682402
+--> to Sigmoid node, weight -1.8519762765517562
+--> to Sigmoid node, weight -1.810842210610331
+--> to Sigmoid node, weight -1.8144146732380209
+--> to Sigmoid node, weight -1.8051962192302038
+--> to Sigmoid node, weight -2.330497535513485
+--> to Sigmoid node, weight -1.9120009340391988
+--> to Sigmoid node, weight -2.133678254535673
+--> to Sigmoid node, weight -1.8181123617636237
+--> to Sigmoid node, weight -2.0220466380915343
+--> to Sigmoid node, weight -1.807830580099853
+--> to Sigmoid node, weight -1.8451293240900102
+--> to Sigmoid node, weight -1.835973737827338
+--> to Sigmoid node, weight -2.000801881151614
+--> to Sigmoid node, weight -1.808341532050835
+--> to Sigmoid node, weight -1.8196596671357919
+--> to Sigmoid node, weight -1.8231987383012018
+Node: Sigmoid node
+Value: 0.44172349819773776
+Edges:
+--> to Sigmoid node, weight -1.8396989318286872
+--> to Sigmoid node, weight -1.8358289741268061
+--> to Sigmoid node, weight -2.126443975035627
+--> to Sigmoid node, weight -1.7563719480868718
+--> to Sigmoid node, weight -1.9680996013885297
+--> to Sigmoid node, weight -1.8612887658688722
+--> to Sigmoid node, weight -1.8509258456281552
+--> to Sigmoid node, weight -1.865856837815437
+--> to Sigmoid node, weight -1.881923100372286
+--> to Sigmoid node, weight -1.835843370489516
+--> to Sigmoid node, weight -1.8312502914142852
+--> to Sigmoid node, weight -1.8381930004538618
+--> to Sigmoid node, weight -2.3715753539007607
+--> to Sigmoid node, weight -1.9394438584775304
+--> to Sigmoid node, weight -2.160576316547652
+--> to Sigmoid node, weight -1.8436546526557784
+--> to Sigmoid node, weight -2.0458724821941145
+--> to Sigmoid node, weight -1.8394091780223183
+--> to Sigmoid node, weight -1.8681581587043083
+--> to Sigmoid node, weight -1.8678983127448818
+--> to Sigmoid node, weight -2.026260517474851
+--> to Sigmoid node, weight -1.8292712753579485
+--> to Sigmoid node, weight -1.8438504942657936
+--> to Sigmoid node, weight -1.8440225239227899
+Node: Sigmoid node
+Value: 0.44123456497190733
+Edges:
+--> to Sigmoid node, weight -1.8286920395257347
+--> to Sigmoid node, weight -1.8200963019120946
+--> to Sigmoid node, weight -2.1171117111153155
+--> to Sigmoid node, weight -1.740997200012175
+--> to Sigmoid node, weight -1.9516690500321214
+--> to Sigmoid node, weight -1.8465122652143535
+--> to Sigmoid node, weight -1.837464646247328
+--> to Sigmoid node, weight -1.8576469689785367
+--> to Sigmoid node, weight -1.8644228647990562
+--> to Sigmoid node, weight -1.8308058693700462
+--> to Sigmoid node, weight -1.8245776805552534
+--> to Sigmoid node, weight -1.8256986216064648
+--> to Sigmoid node, weight -2.3546123127624874
+--> to Sigmoid node, weight -1.9274554494931957
+--> to Sigmoid node, weight -2.145706349245588
+--> to Sigmoid node, weight -1.8345866359726526
+--> to Sigmoid node, weight -2.0382406580990713
+--> to Sigmoid node, weight -1.8285168452706155
+--> to Sigmoid node, weight -1.861745320642838
+--> to Sigmoid node, weight -1.849801526875969
+--> to Sigmoid node, weight -2.0169147742593543
+--> to Sigmoid node, weight -1.8224390404159352
+--> to Sigmoid node, weight -1.8354769134700424
+--> to Sigmoid node, weight -1.8348171233811101
+Node: Sigmoid node
+Value: 0.43685766348741695
+Edges:
+--> to Sigmoid node, weight -1.7773117762544568
+--> to Sigmoid node, weight -1.7752065057099022
+--> to Sigmoid node, weight -2.050323750104674
+--> to Sigmoid node, weight -1.6813870651701701
+--> to Sigmoid node, weight -1.9023728212878732
+--> to Sigmoid node, weight -1.7988144260872114
+--> to Sigmoid node, weight -1.7904461528078868
+--> to Sigmoid node, weight -1.8001453143537065
+--> to Sigmoid node, weight -1.8141569266202644
+--> to Sigmoid node, weight -1.7781715849393485
+--> to Sigmoid node, weight -1.7705471426845905
+--> to Sigmoid node, weight -1.7735048800036024
+--> to Sigmoid node, weight -2.286884815423675
+--> to Sigmoid node, weight -1.876595894075706
+--> to Sigmoid node, weight -2.0866691675098887
+--> to Sigmoid node, weight -1.7895278570897388
+--> to Sigmoid node, weight -1.979273581358907
+--> to Sigmoid node, weight -1.7752832656332924
+--> to Sigmoid node, weight -1.8143966162777916
+--> to Sigmoid node, weight -1.7999361279423305
+--> to Sigmoid node, weight -1.957310514791495
+--> to Sigmoid node, weight -1.7653193830378697
+--> to Sigmoid node, weight -1.7912682335081311
+--> to Sigmoid node, weight -1.7801328106697931
+Printing neural net statistics for layer 2
+Node: Sigmoid node
+Value: 0.9999998803882072
+Edges:
+--> to Softmax node, weight -2.099821190979054
+--> to Softmax node, weight 2.1206237316772256
+Node: Sigmoid node
+Value: 0.9999998764025806
+Edges:
+--> to Softmax node, weight -1.593457439660479
+--> to Softmax node, weight 1.6170197003282936
+Node: Sigmoid node
+Value: 0.9999999900135322
+Edges:
+--> to Softmax node, weight 3.214414151267879
+--> to Softmax node, weight -3.1926617000328776
+Node: Sigmoid node
+Value: 0.9999997353659026
+Edges:
+--> to Softmax node, weight -2.9304456591462538
+--> to Softmax node, weight 2.949901854946575
+Node: Sigmoid node
+Value: 0.999999960828375
+Edges:
+--> to Softmax node, weight 1.1133704218859442
+--> to Softmax node, weight -1.0899872241347546
+Node: Sigmoid node
+Value: 0.9999999021043393
+Edges:
+--> to Softmax node, weight -0.7907455588284136
+--> to Softmax node, weight 0.8016071566273153
+Node: Sigmoid node
+Value: 0.9999998919802614
+Edges:
+--> to Softmax node, weight -0.9892838164689186
+--> to Softmax node, weight 1.0105389261587734
+Node: Sigmoid node
+Value: 0.9999999071436159
+Edges:
+--> to Softmax node, weight -0.5714057812287848
+--> to Softmax node, weight 0.5957373217284945
+Node: Sigmoid node
+Value: 0.9999999161411309
+Edges:
+--> to Softmax node, weight -0.35013650978726196
+--> to Softmax node, weight 0.368263591083527
+Node: Sigmoid node
+Value: 0.9999998812913827
+Edges:
+--> to Softmax node, weight -1.3996969640447694
+--> to Softmax node, weight 1.4175428588525911
+Node: Sigmoid node
+Value: 0.9999998767510668
+Edges:
+--> to Softmax node, weight -1.6343629464469267
+--> to Softmax node, weight 1.6562358066289782
+Node: Sigmoid node
+Value: 0.9999998749418891
+Edges:
+--> to Softmax node, weight -1.9407572008544707
+--> to Softmax node, weight 1.9614450120376368
+Node: Sigmoid node
+Value: 0.9999999987714578
+Edges:
+--> to Softmax node, weight 5.777889905782407
+--> to Softmax node, weight -5.759846321337761
+Node: Sigmoid node
+Value: 0.9999999494687851
+Edges:
+--> to Softmax node, weight 0.7282987796883889
+--> to Softmax node, weight -0.7043371549641961
+Node: Sigmoid node
+Value: 0.9999999926522569
+Edges:
+--> to Softmax node, weight 3.7036285192999805
+--> to Softmax node, weight -3.6859043748033344
+Node: Sigmoid node
+Value: 0.9999998899921839
+Edges:
+--> to Softmax node, weight -1.0863990353479844
+--> to Softmax node, weight 1.10837888051432
+Node: Sigmoid node
+Value: 0.999999980777804
+Edges:
+--> to Softmax node, weight 2.3824380140012327
+--> to Softmax node, weight -2.3611656525458926
+Node: Sigmoid node
+Value: 0.9999998780190196
+Edges:
+--> to Softmax node, weight -1.752693008643042
+--> to Softmax node, weight 1.7814438031409234
+Node: Sigmoid node
+Value: 0.9999999121615332
+Edges:
+--> to Softmax node, weight -0.45870308275137806
+--> to Softmax node, weight 0.47029946181330773
+Node: Sigmoid node
+Value: 0.9999999048295622
+Edges:
+--> to Softmax node, weight -0.6609720438976885
+--> to Softmax node, weight 0.6818994164744345
+Node: Sigmoid node
+Value: 0.99999997699133
+Edges:
+--> to Softmax node, weight 1.9626544192747808
+--> to Softmax node, weight -1.9458373529608752
+Node: Sigmoid node
+Value: 0.9999998707126087
+Edges:
+--> to Softmax node, weight -2.179447763247582
+--> to Softmax node, weight 2.1982790879272915
+Node: Sigmoid node
+Value: 0.999999891924832
+Edges:
+--> to Softmax node, weight -0.9917939419173099
+--> to Softmax node, weight 1.003272585778324
+Node: Sigmoid node
+Value: 0.9999998876154195
+Edges:
+--> to Softmax node, weight -1.4136168208924167
+--> to Softmax node, weight 1.4241631212717558
+Printing neural net statistics for layer 3
+Node: Softmax node
+Value: 2.0010847956256166E-10
+Edges:
+Node: Softmax node
+Value: 0.9999999997998915
+Edges:
+
+

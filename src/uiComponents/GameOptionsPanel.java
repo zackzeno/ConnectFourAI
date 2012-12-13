@@ -41,7 +41,7 @@ public class GameOptionsPanel extends JPanel {
 	private JLabel widthLabel;
 	private JTextField heightField;
 	private JTextField widthField;
-	private JLabel p1Label;
+	private JLabel p1Label; 
 	private JLabel p2Label;
 	private JComboBox<String> p1Select;
 	private JComboBox<String> p2Select;
