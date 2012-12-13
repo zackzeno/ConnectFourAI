@@ -60,7 +60,9 @@ public class NeuralNet implements Serializable {
 			for(int j = 0; j < netNodes[i].length; j++) {
 				res += "Node: " + netNodes[i][j].getNodeInfo();
 				res += "\n";
-				res += "Value: " + netNodes[i][j].getActivationValue();
+				res += "Input Value: " + netNodes[i][j].getInputValue();
+				res += "\n";
+				res += "Activation Value: " + netNodes[i][j].getActivationValue();
 				res += "\n";
 				res += "Edges:";
 				res += "\n";
@@ -71,7 +73,7 @@ public class NeuralNet implements Serializable {
 				}
 			}
 		}
-		res += "\n\n";
+		res += "\n";
 		return res;
 	}
 	
@@ -88,6 +90,7 @@ public class NeuralNet implements Serializable {
 				os.close();
 			} 
 			catch (IOException e) {
+				e.printStackTrace();
 				System.exit(0);
 			}
 		}

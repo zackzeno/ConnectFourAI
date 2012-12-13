@@ -190,7 +190,7 @@ public class GameOptionsPanel extends JPanel {
 					p1NNSaveCheck.setVisible(false);
 					p1NNSaveField.setVisible(false);
 				}
-				else if(AIUtils.arrayContains(Player.neuralNetTypes, selected)) {
+				else if(AIUtils.arrayContains(Player.neuralNetTypes, selected) || selected.equals("Decision Tree")) {
 					p1NNLoadCheck.setVisible(true);
 					p1NNLoadField.setVisible(true);
 					p1NNSaveCheck.setVisible(true);
@@ -234,7 +234,7 @@ public class GameOptionsPanel extends JPanel {
 					p2NNSaveCheck.setVisible(false);
 					p2NNSaveField.setVisible(false);
 				}
-				else if(AIUtils.arrayContains(Player.neuralNetTypes, selected)) {
+				else if(AIUtils.arrayContains(Player.neuralNetTypes, selected) || selected.equals("Decision Tree")) {
 					p2NNLoadCheck.setVisible(true);
 					p2NNLoadField.setVisible(true);
 					p2NNSaveCheck.setVisible(true);
@@ -296,7 +296,7 @@ public class GameOptionsPanel extends JPanel {
 								new Object[] { Integer.parseInt(p1MMLevelField.getText()), 
 									Integer.parseInt(p1MMOffField.getText()), Integer.parseInt(p1MMDefField.getText()) }, logging );
 					}
-					else if(AIUtils.arrayContains(Player.neuralNetTypes, p1Selected)) {
+					else if(AIUtils.arrayContains(Player.neuralNetTypes, p1Selected) || p1Selected.equals("Decision Tree")) {
 						a1 = Player.createAI(p1Selected, 
 								new Object[] { p1NNLoadCheck.isSelected() ? p1NNLoadField.getText() + ".data" : null, 
 										p1NNSaveCheck.isSelected() ? p1NNSaveField.getText() + ".data" : null }, logging );
@@ -310,7 +310,7 @@ public class GameOptionsPanel extends JPanel {
 								new Object[] { Integer.parseInt(p2MMLevelField.getText()), 
 									Integer.parseInt(p2MMOffField.getText()), Integer.parseInt(p2MMDefField.getText()) }, logging);
 					}
-					else if(AIUtils.arrayContains(Player.neuralNetTypes, p2Selected)) {
+					else if(AIUtils.arrayContains(Player.neuralNetTypes, p2Selected) || p2Selected.equals("Decision Tree")) {
 						a2 = Player.createAI(p2Selected, 
 								new Object[] { p2NNLoadCheck.isSelected() ? p2NNLoadField.getText() + ".data" : null, 
 										p2NNSaveCheck.isSelected() ? p2NNSaveField.getText() + ".data" : null }, logging);
@@ -674,6 +674,23 @@ public class GameOptionsPanel extends JPanel {
 				}
 			}
 		}
+		if(p1Selected.equals("Decision Tree")) {
+			if(p1NNLoadCheck.isSelected()) {
+				String fname = p1NNLoadField.getText();
+				File f = new File("decs", fname + ".data");
+				if(!f.exists()) {
+					invalidMessage = "Invalid Configuration: Load file not found";
+					return false;
+				}
+			}
+			if(p1NNSaveCheck.isSelected()) {
+				String fname = p1NNSaveField.getText();
+				if(fname.trim().isEmpty()) {
+					invalidMessage = "Invalid Configuration: Save file invalid";
+					return false;
+				}
+			}
+		}
 		if(AIUtils.arrayContains(Player.neuralNetTypes, p2Selected)) {
 			if(p2NNLoadCheck.isSelected()) {
 				String fname = p2NNLoadField.getText();
@@ -685,6 +702,23 @@ public class GameOptionsPanel extends JPanel {
 			}
 			if(p2NNSaveCheck.isSelected()) {
 				String fname = p2NNSaveField.getText();
+				if(fname.trim().isEmpty()) {
+					invalidMessage = "Invalid Configuration: Save file invalid";
+					return false;
+				}
+			}
+		}
+		if(p2Selected.equals("Decision Tree")) {
+			if(p1NNLoadCheck.isSelected()) {
+				String fname = p1NNLoadField.getText();
+				File f = new File("decs", fname + ".data");
+				if(!f.exists()) {
+					invalidMessage = "Invalid Configuration: Load file not found";
+					return false;
+				}
+			}
+			if(p1NNSaveCheck.isSelected()) {
+				String fname = p1NNSaveField.getText();
 				if(fname.trim().isEmpty()) {
 					invalidMessage = "Invalid Configuration: Save file invalid";
 					return false;

@@ -115,7 +115,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		for(int i = 0; i < middleLeftLayerOff.length; i++) { 
 			for(int j = 0; j < middleLeftLayerOff[i].getPositions().length; j++) {
 				int indexOfPos = posToIndex(middleLeftLayerOff[i].getPositions()[j]);
-				NeuralNetEdge firstEdge = new NeuralNetEdge(inputLayerOff[indexOfPos], middleLeftLayerOff[i], 0); 	
+				NeuralNetEdge firstEdge = new NeuralNetEdge(inputLayerOff[indexOfPos], middleLeftLayerOff[i], 1); 	
 				inputLayerOff[indexOfPos].addForwardEdge(firstEdge);
 				middleLeftLayerOff[i].addBackwardEdge(firstEdge);
 			}
@@ -123,7 +123,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		for(int i = 0; i < middleLeftLayerOff.length; i++) {
 			for(int j = 0; j < middleRightLayerOff.length; j++) {
 				if(middleLeftLayerOff[i].overlap(middleRightLayerOff[j])) {
-					NeuralNetEdge conEdge = new NeuralNetEdge(middleLeftLayerOff[i], middleRightLayerOff[j], 0);
+					NeuralNetEdge conEdge = new NeuralNetEdge(middleLeftLayerOff[i], middleRightLayerOff[j], 1);
 					middleLeftLayerOff[i].addForwardEdge(conEdge);
 					middleRightLayerOff[j].addBackwardEdge(conEdge);
 				}
@@ -132,7 +132,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		for(int i = 0; i < middleRightLayerOff.length; i++) { 
 			for(int j = 0; j < middleRightLayerOff[i].getPositions().length; j++) {
 				int indexOfPos = posToIndex(middleRightLayerOff[i].getPositions()[j]);
-				NeuralNetEdge lastEdge = new NeuralNetEdge(middleRightLayerOff[i], outputLayerOff[indexOfPos], 0); 	
+				NeuralNetEdge lastEdge = new NeuralNetEdge(middleRightLayerOff[i], outputLayerOff[indexOfPos], 1); 	
 				middleRightLayerOff[i].addForwardEdge(lastEdge);
 				outputLayerOff[indexOfPos].addBackwardEdge(lastEdge);
 			}
@@ -150,7 +150,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		for(int i = 0; i < middleLeftLayerDef.length; i++) { 
 			for(int j = 0; j < middleLeftLayerDef[i].getPositions().length; j++) {
 				int indexOfPos = posToIndex(middleLeftLayerDef[i].getPositions()[j]);
-				NeuralNetEdge firstEdge = new NeuralNetEdge(inputLayerDef[indexOfPos], middleLeftLayerDef[i], 0); 	
+				NeuralNetEdge firstEdge = new NeuralNetEdge(inputLayerDef[indexOfPos], middleLeftLayerDef[i], 1); 	
 				inputLayerDef[indexOfPos].addForwardEdge(firstEdge);
 				middleLeftLayerDef[i].addBackwardEdge(firstEdge);
 			}
@@ -158,7 +158,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		for(int i = 0; i < middleLeftLayerDef.length; i++) {
 			for(int j = 0; j < middleRightLayerDef.length; j++) {
 				if(middleLeftLayerDef[i].overlap(middleRightLayerDef[j])) {
-					NeuralNetEdge conEdge = new NeuralNetEdge(middleLeftLayerDef[i], middleRightLayerDef[j], 0);
+					NeuralNetEdge conEdge = new NeuralNetEdge(middleLeftLayerDef[i], middleRightLayerDef[j], 1);
 					middleLeftLayerDef[i].addForwardEdge(conEdge);
 					middleRightLayerDef[j].addBackwardEdge(conEdge);
 				}
@@ -167,7 +167,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 		for(int i = 0; i < middleRightLayerDef.length; i++) { 
 			for(int j = 0; j < middleRightLayerDef[i].getPositions().length; j++) {
 				int indexOfPos = posToIndex(middleRightLayerDef[i].getPositions()[j]);
-				NeuralNetEdge lastEdge = new NeuralNetEdge(middleRightLayerDef[i], outputLayerDef[indexOfPos], 0); 	
+				NeuralNetEdge lastEdge = new NeuralNetEdge(middleRightLayerDef[i], outputLayerDef[indexOfPos], 1); 	
 				middleRightLayerDef[i].addForwardEdge(lastEdge);
 				outputLayerDef[indexOfPos].addBackwardEdge(lastEdge);
 			}
@@ -177,12 +177,12 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 			outputLayer[i] = new PositionNode(indexToPos(i));
 		}
 		for(int i = 0; i < outputLayerOff.length; i++) {
-			NeuralNetEdge combineEdge = new NeuralNetEdge(outputLayerOff[i], outputLayer[i], 0);
+			NeuralNetEdge combineEdge = new NeuralNetEdge(outputLayerOff[i], outputLayer[i], 1);
 			outputLayerOff[i].addForwardEdge(combineEdge);
 			outputLayer[i].addBackwardEdge(combineEdge);
 		}
 		for(int i = 0; i < outputLayerDef.length; i++) {
-			NeuralNetEdge combineEdge = new NeuralNetEdge(outputLayerDef[i], outputLayer[i], 0);
+			NeuralNetEdge combineEdge = new NeuralNetEdge(outputLayerDef[i], outputLayer[i], 1);
 			outputLayerDef[i].addForwardEdge(combineEdge);
 			outputLayer[i].addBackwardEdge(combineEdge);
 		}
@@ -249,7 +249,7 @@ public class FiveLayerOffDefAI extends AbstractNeuralNet {
 						maxPosList.clear();
 						maxPosList.add(currentPos);
 					}
-					else if(outputs[posToIndex(currentPos)] >= maxOutput - epsilon) {
+					else if(maxOutput == Double.NEGATIVE_INFINITY || outputs[posToIndex(currentPos)] >= maxOutput - epsilon) {
 						maxPosList.add(currentPos);
 					}
 				}

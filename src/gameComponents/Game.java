@@ -81,6 +81,7 @@ public class Game implements Runnable {
 
 	@Override
 	public void run() {
+		long gameStart = System.currentTimeMillis();
 		activeGameThread = Thread.currentThread();
 		int winningPlayer = -1;
 		players[0].startGame();
@@ -230,5 +231,7 @@ public class Game implements Runnable {
 		}
 		
 		MainFrame.getMainFrame().repaint();
+		double totalTime = (System.currentTimeMillis() - gameStart)/1000.;
+		System.out.println("Game took " + totalTime + " seconds");
 	}
 }

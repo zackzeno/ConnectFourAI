@@ -51,7 +51,7 @@ public class FourGroupNode extends NeuralNetNode {
 
 	@Override
 	public double getActivationDerivative(double value) {
-		return value*(1-value);
+		double sig = 1/(1+Math.exp(-value));
+		return sig*(1 - sig);
 	}
-
 }

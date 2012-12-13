@@ -324,7 +324,7 @@ public class MoveValueHeuristicAI implements AIProgram {
 					}
 				}					
 			}
-			if(nPConsec == 3) {
+			if(nPConsec >= 3) {
 				return Integer.MAX_VALUE;
 			}
 			if(nPConsec == 2 && nPMax >= 3) {

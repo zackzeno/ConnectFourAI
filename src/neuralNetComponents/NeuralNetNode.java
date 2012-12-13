@@ -25,6 +25,7 @@ public abstract class NeuralNetNode implements Serializable {
 	public void reset() {
 		accumulatedDelta = 0;
 		accumulatedValue = 0;
+		activationValue = 0;
 	}
 	
 	public void addForwardEdge(NeuralNetEdge edge) {
